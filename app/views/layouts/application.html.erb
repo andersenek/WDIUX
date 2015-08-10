@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FrontlinesRentals</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <% if current_user %>
+    <%= link_to "Click Here to Signout", destroy_user_session_path, :method => :delete %>
+    <% else %>
+    <%= link_to 'Signup', new_user_registration_path %>
+    <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  </nav>
+    <h2><%= flash[:notice] %></h2>
+<%= yield %>
+
+</body>
+</html>
