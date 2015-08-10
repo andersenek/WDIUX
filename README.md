@@ -1,5 +1,4 @@
 # WDIUX
-USER STORIES
 
 As a user, I should be able to:
 
