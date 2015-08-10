@@ -39,3 +39,97 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/" for ::1 at 2015-08-10 13:30:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 34ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-10 13:30:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 2046ms (Views: 2030.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 13:30:36 -0400
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-10 13:30:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-08-10 13:30:49 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-08-10 13:30:59 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JOITzEoxnG2TxeTUEWpDUNNkRiF7Lv27OsmDXmwJ4rvN5i75zyLm4EWkAz1rDa1YTmSNO1UTAG7pFcr4oKCU+g==", "user"=>{"email"=>"user@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (17.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (7.0ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["email", "user@gmail.com"], ["encrypted_password", "$2a$10$BH1ioJ.gcCDxyQJCAGCKGeOlzVwj8hZoRICsEh2kL3Anag1MhjgaK"], ["created_at", "2015-08-10 17:30:59.745883"], ["updated_at", "2015-08-10 17:30:59.745883"]]
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2015-08-10 17:30:59.761775"], ["current_sign_in_at", "2015-08-10 17:30:59.761775"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-08-10 17:30:59.764118"], ["id", 1]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 231ms (ActiveRecord: 33.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 13:30:59 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-08-10 13:31:11 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uoML56pGzNIJxzcF55YbptR0Y6l/N6hgkOZ04SBhtvxThzbSL1W2X9+m0Oyd8fWuSXSos1EKVbVDOj1H7MjAvQ=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 13:31:11 -0400
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-10 13:31:11 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-10 13:36:45 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBCJYOpseZ08v6WEGMBSYQ4LnA086RyhbeoohrkA/tJ2zcb+hTtqswal6FVuViXGAQajnnJwIvAkAaAAGHPEUA==", "user"=>{"email"=>"user@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "user@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2015-08-10 17:36:45.224077"], ["sign_in_count", 2], ["updated_at", "2015-08-10 17:36:45.230214"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 170ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-10 13:36:45 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.4ms)
