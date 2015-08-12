@@ -22024,3 +22024,86 @@ Processing by ItemsController#index as HTML
   Rendered items/index.html.erb within layouts/application (3.4ms)
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 16:03:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/ericaandersen/wdi/lessons/03_wdi_ux/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 251ms (Views: 206.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 16:05:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/ericaandersen/wdi/lessons/03_wdi_ux/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 227ms (Views: 187.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:05:17 -0400
+
+
+Started GET "/assets/application.self-df6d3e9147e96bb94e77652719d3930d042e476e5180552a3171cd0b93bc0c6b.css?body=1" for ::1 at 2015-08-12 16:05:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:05:17 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:05:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:05:17 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 16:05:29 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/ericaandersen/wdi/lessons/03_wdi_ux/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-df6d3e9147e96bb94e77652719d3930d042e476e5180552a3171cd0b93bc0c6b.css?body=1" for ::1 at 2015-08-12 16:05:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:05:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:05:29 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:05:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:05:29 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 16:06:38 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/ericaandersen/wdi/lessons/03_wdi_ux/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-5607d5c6f48afc9f816d3c42b3bcf8df4db71efb387895be50be50795b89036a.css?body=1" for ::1 at 2015-08-12 16:06:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:06:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:06:38 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:06:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:06:38 -0400
