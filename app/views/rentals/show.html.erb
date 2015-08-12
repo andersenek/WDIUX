@@ -1,11 +1,6 @@
-<ul>
-<li><% @rental.each do |rental| %>
-      <%= link_to "#{rental.name}", user_rental_path(@user,rental) %></li>
-      <li><%= rental.staff %></li>
-      <li><%= rental.email %></li>
-      <li><%= rental.phone %></li>
-      <li><%= rental.item %></li>
-      <br>
-<% end %>
-
-</ul>
+<h1>Renter Info</h1>
+<p><%= @rental.name %><%= link_to "(Edit this Rental)", edit_user_rental_path(@user, @rental) %></p>
+<p><%= @rental.staff %></p>
+<p><%= @rental.email %></p>
+<p><%= @rental.phone %></p>
+<p><%= @rental.item %></p>

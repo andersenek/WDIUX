@@ -6,9 +6,18 @@ def index
   @rental = Rental.all
 end
 
+def all
+  @user = User.find_by(session[:user_id])
+  @rental = Rental.all.order('created_at DESC')
+end
+
+def policy
+
+end
+
 def show
   @user = User.find_by(session[:user_id])
-  @rental = Rental.all
+  @rental = Rental.find(params[:id])
 end
 
 def new
@@ -28,9 +37,15 @@ def create
 end
 
 def edit
+  @user = User.find_by(session[:user_id])
+  @rental = Rental.find(params[:id])
 end
 
 def update
+  @user = User.find_by(session[:user_id])
+  @rental = Rental.find(params[:id])
+  @rental.update(rental_params)
+  redirect_to user_rental_path(@user, @rental)
 end
 
 def destroy
