@@ -12,7 +12,9 @@ def all
 end
 
 def policy
+end
 
+def confirmation
 end
 
 def show
@@ -30,7 +32,7 @@ def create
     @rental = @user.rentals.create!(rental_params)
     @rental.user = current_user
     if @rental.save
-      redirect_to user_rentals_path(@user)
+      redirect_to rentals_confirmation_path
     else
       redirect_to new_user_rental_path
     end
@@ -57,7 +59,7 @@ end
 
 private
 def rental_params
-  params.require(:rental).permit(:name, :staff, :email, :phone, :item)
+  params.require(:rental).permit(:name, :staff, :email, :phone, :item, :daterental)
 end
 
 end
