@@ -1,0 +1,6 @@
+<h1>Edit Rental Info</h1>
+<%= render partial: "form" %>
+
+<%= form_for [@user, @rental], method: :delete do |f| %>
+  <%= f.submit "Delete!" %>
+    <% end %>

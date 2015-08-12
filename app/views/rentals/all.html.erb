@@ -1,0 +1,12 @@
+<h1>All Rentals</h1>
+<ul>
+<li><% @rental.each do |rental| %>
+      <%= link_to "#{rental.name}", user_rental_path(@user,rental) %></li>
+      <li><%= rental.staff %></li>
+      <li><%= rental.email %></li>
+      <li><%= rental.phone %></li>
+      <li><%= rental.item %></li>
+      <br>
+<% end %>
+
+</ul>

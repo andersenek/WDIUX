@@ -1,0 +1,8 @@
+<h1>Equipment</h1>
+<h2><%= link_to "Add a New Rental Item", new_item_path %></h2>
+<% @items.each do |item| %>
+<p><%= link_to "#{item.name}", item %></p>
+<p>Item Condition: <%= item.condition %></p>
+<p>Item Quantity: <%= item.quantity %></p>
+<%= image_tag "#{item.photo_url}" %>
+<% end %>
