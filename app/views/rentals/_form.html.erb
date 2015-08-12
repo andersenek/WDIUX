@@ -1,0 +1,20 @@
+<ul>
+  <%= form_for [@user, @rental] do |f| %>
+      <%= f.label :name, "Your Name" %>
+        <%= f.text_field :name %>
+
+      <%= f.label :staff, "Staff or Student" %>
+        <%= f.text_field :staff %>
+
+        <%= f.label :email, "Email" %>
+          <%= f.text_field :email %>
+
+          <%= f.label :phone, "Phone" %>
+            <%= f.text_field :phone %>
+
+            <%= f.label :item, "Item" %>
+              <%= f.text_field :item %>
+
+      <%= f.submit %>
+    <% end %>
+</ul>
