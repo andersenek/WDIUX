@@ -18,7 +18,7 @@ def confirmation
 end
 
 def show
-  @user = User.find_by(session[:user_id])
+  @user = User.find(current_user)
   @rental = Rental.find(params[:id])
 end
 
@@ -41,11 +41,13 @@ end
 def edit
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :update, @rental
 end
 
 def update
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :update, @rental
   @rental.update(rental_params)
   redirect_to user_rental_path(@user, @rental)
 end
@@ -53,6 +55,7 @@ end
 def destroy
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :destroy, @rental
   @rental.destroy
   redirect_to rentals_all_path
 end

@@ -1,5 +1,5 @@
-
-<p><%= @item.name %><%= link_to "(Edit this Item)", edit_item_path(@item) %></p>
+<h1><%= @item.name %></h1>
+<p><%= link_to "(Edit this Item)", edit_item_path(@item) %></p>
 <p>Item Condition: <%= @item.condition %></p>
 <p>Item Quantity: <%= @item.quantity %></p>
 <%= image_tag @item.photo_url %>

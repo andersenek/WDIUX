@@ -1,5 +1,9 @@
 <h1>Renter Info</h1>
-<p><%= @rental.name %><%= link_to "(Edit this Rental)", edit_user_rental_path(@user, @rental) %></p>
+<p><%= @rental.name %>
+  <% if can? :update, @rental %>
+  <%= link_to "(Edit this Rental)", edit_user_rental_path(@user, @rental) %>
+<% end %>
+</p>
 <p><%= @rental.staff %></p>
 <p><%= @rental.email %></p>
 <p><%= @rental.phone %></p>
