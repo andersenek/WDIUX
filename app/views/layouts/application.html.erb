@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FrontlinesRentals</title>
+  <title>GA Frontlines Rentals</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <nav>
+    <%= link_to "Home", root_path %>
     <% if current_user %>
     <%= link_to "Click Here to Signout", destroy_user_session_path, :method => :delete %>
     <% else %>
@@ -19,12 +20,12 @@
 <%= yield %>
 
 <footer>
-GA Front Lines
-  Read our rental policies >
-  202-555-5555
-  frontlines@ga.co
-  Hours of Operation:
-M-F 8:30 am - 10:00 pm
+<p>GA Front Lines</p>
+<p>
+  <%= link_to "Read our Rental Policies", rentals_policy_path %>
+</p>
+<p>8th Floor, 1133 15th St NW, Washington, DC 20005</p>
+<p>(202) 517-1777 | dc@generalassemb.ly | Hours of Operation: M-F 8:30am - 10:00pm</p>
 </footer>
 </body>
 </html>
