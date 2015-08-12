@@ -28,18 +28,40 @@
   font-weight: normal;
 }
 
+@font-face {
+ font-family: "Avenir";
+ src: url("http://ericaandersen.net/fonts/Avenir.ttc") format("ttc");
+ font-style: normal;
+ font-weight: normal;
+}
+
 li {
   padding: 0;
   list-style-type: none;
 }
 
 /* Main Styles */
+
+h1.home-large-text {
+  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  color: white;
+  font-size: 7em;
+  margin: 0 auto;
+  line-height: .8;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .section-top {
-    height: 84vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 36.250rem;
+  height: 84vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 36.250rem;
 }
 
 /* Navigation */
@@ -85,7 +107,7 @@ li {
 .header ul li {
  	float: left;
  	display: block;
- 	font-family:'News706';
+ 	font-family: "News706BT-RomanC", Georgia;
 }
 
 .header ul li:first-child {
@@ -203,16 +225,33 @@ ul.nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
+  position: relative;
 }
 
 .forms {
+  font-family: "News706BT-RomanC", Georgia;
   width: 70%;
   margin: 0 auto;
+  margin-top: 30px;
   padding: 20px;
   text-align: center;
   -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
   box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+}
+
+.forms h2 {
+  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.field-remember {
+  position: relative;
+}
+
+p.remember {
+  display: inline-block;
 }
 
 .submit {
@@ -227,8 +266,16 @@ ul.nav {
   background: #818181;
 }
 
+input {
+  line-height: 2em;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(239, 239, 239) inset;
+}
+
 input.submit {
-  width: 30% !important;
+  width: 29.5% !important;
 }
 
 .submit, .signup, .reset {
@@ -238,7 +285,6 @@ input.submit {
   margin: 5px 2px;
   padding: .5em 1em;
   border: 0;
- 	font-family:'News706';
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -webkit-border-radius: 3px;
@@ -258,12 +304,53 @@ input.submit {
 .forms .field {
   display: inline-block;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .forms input {
   width: 80%;
 }
 
+/* Footer */
+
+footer {
+  background: #222;
+  color: #a2a2a2;
+  margin: 2em 0em 0em 0em;
+  font: 1.125em/.5em "News706BT-RomanC",Georgia;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+footer a {
+  color: #a2a2a2;
+}
+
+footer p {
+  font-size: .8em;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+  text-align: right;
+}
+
+.footer-left, .footer-right {
+  padding: 20px 30px;
+}
+
+.footer-left h3, .footer-right h3 {
+  font-family: "Avenir", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #dadada;
+  margin: .6em 0em;
+}
  /* Media Queries */
 
 @media screen and (max-width: 1550px) { /*LARGER SCREEN ADJUSTMENTS*/

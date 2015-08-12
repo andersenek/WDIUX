@@ -70,12 +70,23 @@
 <%= yield %>
 
 <footer>
-<p>GA Front Lines</p>
-<p>
-  <%= link_to "Read our Rental Policies", rentals_policy_path %>
-</p>
-<p>8th Floor, 1133 15th St NW, Washington, DC 20005</p>
-<p>(202) 517-1777 | dc@generalassemb.ly | Hours of Operation: M-F 8:30am - 10:00pm</p>
+
+  <div class="footer-left">
+    <h3>General Assembly</h3>
+    <h3>Frontlines Team</h3>
+    <p>8th Floor, 1133 15th St NW,</p>
+    <p>Washington, DC 20005</p>
+    <p><%= link_to "Read our Rental Policies", rentals_policy_path %></p>
+  </div>
+
+  <div class="footer-right">
+    <h3>Hours of Operation</h3>
+    <p>Monday - Sunday</p>
+    <p>8:30am - 10:00pm</p>
+    <p>(202) 517-1777</p>
+    <p>dc@generalassemb.ly</p>
+  </div>
+
 </footer>
 </body>
 </html>
