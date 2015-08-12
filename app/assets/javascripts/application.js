@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// Navigation with jQuery
+$(function(){
+  $( '#menubuttonsvg' ).click(function(){
+    $('.mobileNavWrapper').toggleClass('showNav')
+    })
+  })
+
+$(function(){
+  $( '#backsvg' ).click(function(){
+    $('.mobileNavWrapper').removeClass('showNav')
+    })
+  })

@@ -1,5 +1,4 @@
 # WDIUX
-
 As a user, I should be able to:
 
 -sign up and create an account, so I can use the application.
