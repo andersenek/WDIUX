@@ -18852,3 +18852,38 @@ DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`
   [1m[36mRental Load (0.2ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 1]]
   Rendered rentals/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2/rentals/new" for ::1 at 2015-08-12 15:35:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (76.2ms)
+  Rendered rentals/new.html.erb within layouts/application (92.8ms)
+Completed 200 OK in 553ms (Views: 467.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 15:35:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:35:34 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:35:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:35:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:35:34 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 15:35:38 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered rentals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 24.9ms | ActiveRecord: 0.8ms)
