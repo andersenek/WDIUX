@@ -4,12 +4,12 @@
         <%= f.text_field :name %>
 
       <%= f.label :condition %>
-        <%= f.text_field :condition %>
+        <%= f.select(:condition, options_for_select([["Poor", "Poor"], ["Fair", "Fair"],["Good", "Good"],["Like New", "Like New"]])) %>
 
         <%= f.label :quantity %>
-          <%= f.text_field :quantity %>
+          <%= f.select(:quantity, 0..10) %>
 
-          <%= f.label :photo_url %>
+          <%= f.label :photo_url, "Photo of Item" %>
             <%= f.text_field :photo_url %>
 
       <%= f.submit %>

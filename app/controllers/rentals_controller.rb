@@ -49,6 +49,10 @@ def update
 end
 
 def destroy
+  @user = User.find_by(session[:user_id])
+  @rental = Rental.find(params[:id])
+  @rental.destroy
+  redirect_to rentals_all_path
 end
 
 private

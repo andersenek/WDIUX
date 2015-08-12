@@ -4,7 +4,7 @@
         <%= f.text_field :name %>
 
       <%= f.label :staff, "Staff or Student" %>
-        <%= f.text_field :staff %>
+        <%= f.select(:staff, options_for_select([["Student", "Student"],["Staff", "Staff"]])) %>
 
         <%= f.label :email, "Email" %>
           <%= f.text_field :email %>
@@ -12,8 +12,8 @@
           <%= f.label :phone, "Phone" %>
             <%= f.text_field :phone %>
 
-            <%= f.label :item, "Item" %>
-              <%= f.text_field :item %>
+            <%= f.label :item, "Item to Rent" %>
+              <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
 
       <%= f.submit %>
     <% end %>

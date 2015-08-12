@@ -13,6 +13,12 @@ def new
 end
 
 def create
+  @item = Item.create!(item_params)
+  if @item.save
+  redirect_to item_path(@item)
+else
+  redirect_to new_item_path
+end
 end
 
 def edit
@@ -28,6 +34,9 @@ def update
 end
 
 def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+    redirect_to items_path
 end
 
 private
