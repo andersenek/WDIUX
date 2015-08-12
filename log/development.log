@@ -21910,3 +21910,117 @@ Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a24
 
 
 Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 15:32:29 -0400
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-12 15:55:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 288ms (Views: 259.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.self-df6d3e9147e96bb94e77652719d3930d042e476e5180552a3171cd0b93bc0c6b.css?body=1" for ::1 at 2015-08-12 15:55:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:55:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:55:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:55:48 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:55:48 -0400
+
+
+Started GET "/users/password/new" for ::1 at 2015-08-12 15:56:00 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2015-08-12 15:57:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 273ms (Views: 248.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.self-df6d3e9147e96bb94e77652719d3930d042e476e5180552a3171cd0b93bc0c6b.css?body=1" for ::1 at 2015-08-12 15:57:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:57:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:57:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:57:36 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:57:36 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 15:57:37 -0400
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-12 15:57:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-12 15:57:40 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n7Nrp9is7RINXpnrklSOXvAZsd1gsCzRNEl3JF11bHpZ94YdPSrqZXGKaNBFOmfbDNOTzn77HzT/R56aX2EBEg==", "user"=>{"email"=>"andersenek@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "andersenek@gmail.com"]]
+Completed 401 Unauthorized in 82ms (ActiveRecord: 1.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n7Nrp9is7RINXpnrklSOXvAZsd1gsCzRNEl3JF11bHpZ94YdPSrqZXGKaNBFOmfbDNOTzn77HzT/R56aX2EBEg==", "user"=>{"email"=>"andersenek@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 109ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-12 15:57:44 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7uxUWY9tYvoEINF8XZlW23ANTuTs1MIOMUpkuO4OooF/1zrg7uy/JTEcn4mGIzekQoXKI34YO3zy8As4axX4g==", "user"=>{"email"=>"andersenek@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "andersenek@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-08-12 19:09:01.115643"], ["current_sign_in_at", "2015-08-12 19:57:44.741967"], ["sign_in_count", 9], ["updated_at", "2015-08-12 19:57:44.744362"], ["id", 1]]
+  [1m[35m (213.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 305ms (ActiveRecord: 214.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 15:57:44 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/ericaandersen/wdi/lessons/03_wdi_ux/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 27.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:57:47 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (1.3ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/items" for ::1 at 2015-08-12 15:57:51 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 2.0ms)
