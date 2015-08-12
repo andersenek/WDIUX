@@ -17,7 +17,7 @@
               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
 
               <%= f.label :daterental, "Date for Rental" %>
-                <%= f.text_field :daterental %>
+                <%= f.date_select :daterental, :order => [:month, :day, :year] %>
 
       <%= f.submit %>
     <% end %>

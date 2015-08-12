@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20150811130348) do
     t.string   "email"
     t.string   "phone"
     t.string   "item"
-    t.string   "daterental"
+    t.datetime "daterental"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"

@@ -15874,3 +15874,1599 @@ Processing by RentalsController#policy as HTML
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered rentals/policy.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:26:09 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 51.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:26:09 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:26:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:26:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:26:09 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:26:09 -0400
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:26:11 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (4.1ms)
+  Rendered rentals/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 44ms (Views: 33.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:26:13 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (3.4ms)
+  Rendered rentals/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:26:14 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:26:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:26:14 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:26:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:26:14 -0400
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-08-12 14:26:20 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TE6EhPY34v5SyB7NXS3VKHn8ybzhO+vzVRj/C164mL1lWV6YBRt19TgxqUHHBDBcCF5axeXj/2ZukDm1FOXvsw=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:26:20 -0400
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-12 14:26:20 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-12 14:26:32 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SjFkJnSMAQTDpntalnzalL+I7xF3At3KNl7L2BAjMylEdVm8C9QcaU5TWu8xpjvASrxU+ZByK6UUuWn2anqF9Q==", "user"=>{"email"=>"user@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "user@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2015-08-12 18:26:32.908284"], ["sign_in_count", 2], ["updated_at", "2015-08-12 18:26:32.910371"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:26:32 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:26:34 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (2.3ms)
+  Rendered rentals/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:26:42 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (2.7ms)
+  Rendered rentals/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:26:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:26:42 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:26:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:26:42 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:26:42 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 14:27:03 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:29:07 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (10.7ms)
+  Rendered rentals/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:29:26 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (5.1ms)
+  Rendered rentals/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:29:26 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:29:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:29:26 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:29:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:29:26 -0400
+
+
+Started POST "/users/1/rentals" for ::1 at 2015-08-12 14:29:54 -0400
+Processing by RentalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0pVNQVcy+5GO5vRoyKEtrgMupOte8oGWW/ief3jjkh9P0Yxk5pyDsZv6QP407omq8nI9hTNCf2V0JM6ADi9zTw==", "rental"=>{"name"=>"Jimmy John", "staff"=>"Staff", "email"=>"jimmy@johns.com", "phone"=>"555-555-5555", "item"=>"IPhone 4 Charger", "daterental(2i)"=>"8", "daterental(3i)"=>"12", "daterental(1i)"=>"2015"}, "commit"=>"Create Rental", "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "rentals" ("name", "staff", "email", "phone", "item", "daterental", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Jimmy John"], ["staff", "Staff"], ["email", "jimmy@johns.com"], ["phone", "555-555-5555"], ["item", "IPhone 4 Charger"], ["daterental", "{1=>2015, 2=>8, 3=>12}"], ["user_id", 1], ["created_at", "2015-08-12 18:29:54.451780"], ["updated_at", "2015-08-12 18:29:54.451780"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/rentals/confirmation
+Completed 302 Found in 15ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/rentals/confirmation" for ::1 at 2015-08-12 14:29:54 -0400
+Processing by RentalsController#confirmation as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered rentals/confirmation.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:29:56 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.5ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:32:58 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.4ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:33:05 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:33:05 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:33:07 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (7.0ms)
+  Rendered rentals/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `%' for [:month, :day, :year]:Array):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :month_format_string => [:month, :day, :year] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279037123940'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279037123940'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279037043360'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.3ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:33:08 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (5.9ms)
+  Rendered rentals/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `%' for [:month, :day, :year]:Array):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :month_format_string => [:month, :day, :year] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279031618840'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279031618840'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (98.3ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:33:38 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (1.4ms)
+  Rendered rentals/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected '(', expecting ')'
+...erental, :month_format_string ([:month, :day, :year]) );@out...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ')', expecting keyword_end
+...tring ([:month, :day, :year]) );@output_buffer.safe_append='
+...                               ^):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected '(', expecting ')'
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ')', expecting keyword_end
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.1ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:36:01 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (4.6ms)
+  Rendered rentals/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into String):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month, :day, :year].to_s %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279038869520'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279038869520'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.4ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:36:14 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (4.9ms)
+  Rendered rentals/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `to_i' for [:month, :day, :year]:Array):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month, :day, :year].to_i %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279031355360'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279031355360'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.0ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:36:31 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (5.5ms)
+  Rendered rentals/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `to_i' for :month:Symbol):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month.to_i, :day, :year] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279030010520'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279030010520'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.5ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:36:40 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (4.8ms)
+  Rendered rentals/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:36:40 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:36:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:36:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:36:40 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:36:40 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:37:01 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:37:04 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.6ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:37:05 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:37:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:37:05 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:37:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:37:05 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:37:18 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.7ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:37:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:37:18 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:37:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:37:18 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:37:18 -0400
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:37:27 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.3ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:37:33 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.5ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:37:34 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:37:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:37:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:37:34 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:37:34 -0400
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:37:42 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:37:42 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:37:42 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:37:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:37:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:37:42 -0400
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:38:01 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.2ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:38:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:38:01 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:38:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:38:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:38:01 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:38:09 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.5ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 38.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:41:16 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:41:18 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (1.3ms)
+  Rendered rentals/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d=( f.date_select (:daterental, options= {:month, :day, :yea...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+...(:daterental, options= {:month, :day, :year}) );@output_buff...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+  app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279037043360'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (145.0ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:41:19 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (1.3ms)
+  Rendered rentals/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d=( f.date_select (:daterental, options= {:month, :day, :yea...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+...(:daterental, options= {:month, :day, :year}) );@output_buff...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+  app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.0ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:41:44 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (1.3ms)
+  Rendered rentals/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d=( f.date_select (:daterental, :order, options= {:month, :d...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+...ntal, :order, options= {:month, :day, :year}) );@output_buff...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+  app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (101.4ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:44:00 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (1.2ms)
+  Rendered rentals/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+...d=( f.date_select (:daterental, :start_year => 2015) );@outp...
+...                               ^):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (101.3ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:46:04 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (4.4ms)
+  Rendered rentals/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:46:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:46:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:46:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:46:04 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:46:04 -0400
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:46:34 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (4.6ms)
+  Rendered rentals/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `select_{:year=>2015}' for #<ActionView::Helpers::DateTimeSelector:0x007fd6359acaf0>):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month, :day, :year => 2015] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__162129878641130910_70279029943540'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__162129878641130910_70279029943540'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1349908307576353149_70279036767960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.8ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:46:41 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  Rendered rentals/_form.html.erb (3.6ms)
+  Rendered rentals/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:46:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:46:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:46:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:46:41 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:46:41 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:49:59 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:50:00 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `flatten' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.flatten.join %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70278993225460'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.6ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:50:01 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined method `flatten' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.flatten.join %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70279030188960'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.3ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:50:40 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `join' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.join %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70279031208800'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (101.7ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:50:41 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.2ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `join' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.join %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70279030084260'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.9ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:51:10 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `join' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.join %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70279030084260'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (154.0ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:51:35 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.2ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:51:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:51:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:51:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:51:36 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:51:36 -0400
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:51:44 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:51:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:51:44 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:51:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:51:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:51:44 -0400
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:51:55 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.2ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `flatten' for "{1=>2015, 2=>8, 3=>12}":String):
+    4: <p><%= @rental.email %></p>
+    5: <p><%= @rental.phone %></p>
+    6: <p><%= @rental.item %></p>
+    7: <p><%= @rental.daterental.flatten %></p>
+  app/views/rentals/show.html.erb:7:in `_app_views_rentals_show_html_erb__1235932966932747733_70278987733600'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.8ms)
+
+
+Started GET "/users/1/rentals/3" for ::1 at 2015-08-12 14:54:40 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.2ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered rentals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:54:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:54:40 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:54:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:54:40 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:54:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'rentals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (9.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (7.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150810161603)
+  [1m[35m (0.3ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/pdavies/wdi/projects/WDIUX/db/migrate/20150810161603_devise_create_users.rb:34)
+  [1m[36m (16.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (5.8ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150810161603"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRentals (20150810172527)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (9.7ms)[0m  [1mCREATE TABLE "rentals" ("id" serial primary key, "name" character varying, "staff" character varying, "email" character varying, "phone" character varying, "item" character varying, "daterental" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150810172527"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateItems (20150811130348)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (10.6ms)[0m  [1mCREATE TABLE "items" ("id" serial primary key, "name" character varying, "condition" character varying, "quantity" integer, "photo_url" character varying) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150811130348"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'rentals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "UBoom"], ["condition", "Good"], ["quantity", 1], ["photo_url", "GA_boombox.jpg"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IPad"], ["condition", "Good"], ["quantity", 1], ["photo_url", "GA_ipad.jpg"]]
+  [1m[35m (3.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "IPhone 4 Charger"], ["condition", "Good"], ["quantity", 4], ["photo_url", "GA_iphone4.jpg"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IPhone 5/6 Charger"], ["condition", "Good"], ["quantity", 2], ["photo_url", "GA_iphone5.jpg"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "MacBook Air"], ["condition", "Good"], ["quantity", 3], ["photo_url", "GA_laptop.jpg"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "MacBook Charger"], ["condition", "Good"], ["quantity", 2], ["photo_url", "GA_laptopcharger.jpg"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "condition", "quantity", "photo_url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "USB Cord"], ["condition", "Good"], ["quantity", 3], ["photo_url", "GA_usbcord.jpg"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-08-12 14:58:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 49ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-12 14:58:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 442ms (Views: 428.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-08-12 14:58:35 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-08-12 14:58:43 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PBMFq7h8fIhKAf3050RrACQNY9H2xufJr4W2d5xrmnqhV8SOCdIEqF8dSWIbC88E1VH6v5t2GTqAWeaI6qd7Kg==", "user"=>{"email"=>"user@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@gmail.com' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@gmail.com"], ["encrypted_password", "$2a$10$UuayDo4I0bPjEP0by8TYoujPMWsKc7LhJ5Nq6nhOjVjLcf.nnsLh."], ["created_at", "2015-08-12 18:58:43.472289"], ["updated_at", "2015-08-12 18:58:43.472289"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-08-12 18:58:43.480028"], ["current_sign_in_at", "2015-08-12 18:58:43.480028"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-08-12 18:58:43.483092"], ["id", 1]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 140ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 14:58:43 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 50ms (Views: 29.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:58:48 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (2.0ms)
+  Rendered rentals/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.6ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+...:daterental, :order => {:month, :day, :year} );@output_buffe...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+  app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___480343335360814771_70284491005220'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.0ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (156.5ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:58:49 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (1.2ms)
+  Rendered rentals/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.1ms)
+
+SyntaxError (/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+...:daterental, :order => {:month, :day, :year} );@output_buffe...
+...                               ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/pdavies/wdi/projects/WDIUX/app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/rentals/_form.html.erb:20: syntax error, unexpected ',', expecting =>
+  app/views/rentals/_form.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/rentals/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___480343335360814771_70284516860720'
+
+
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/pdavies/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.0ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-12 14:59:24 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  Rendered rentals/_form.html.erb (12.5ms)
+  Rendered rentals/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 14:59:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 14:59:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 14:59:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 14:59:24 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 14:59:24 -0400
+
+
+Started POST "/users/1/rentals" for ::1 at 2015-08-12 14:59:31 -0400
+Processing by RentalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iuMt3vOCa1u0GEK8cp42KoMTSbDUc1lvA7Qa+M84MWoXp+z7QiwTe6EE9iqO0ZIuck/Q3rnDp5wsaEoHufTQOg==", "rental"=>{"name"=>"jack", "staff"=>"Student", "email"=>"", "phone"=>"", "item"=>"UBoom", "daterental(2i)"=>"8", "daterental(3i)"=>"12", "daterental(1i)"=>"2015"}, "commit"=>"Create Rental", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "rentals" ("name", "staff", "email", "phone", "item", "daterental", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "jack"], ["staff", "Student"], ["email", ""], ["phone", ""], ["item", "UBoom"], ["daterental", "2015-08-12 00:00:00.000000"], ["user_id", 1], ["created_at", "2015-08-12 18:59:31.932323"], ["updated_at", "2015-08-12 18:59:31.932323"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/rentals/confirmation
+Completed 302 Found in 64ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/rentals/confirmation" for ::1 at 2015-08-12 14:59:31 -0400
+Processing by RentalsController#confirmation as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/confirmation.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 14:59:34 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (3.2ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:02:59 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:02:59 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 15:02:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:02:59 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:02:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:02:59 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:03:11 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.6ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 15:03:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:03:11 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:03:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:03:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:03:11 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:03:40 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:03:40 -0400
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 15:03:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:03:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:03:40 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:03:40 -0400
+
+
+Started GET "/rentals/confirmation" for ::1 at 2015-08-12 15:03:45 -0400
+Processing by RentalsController#confirmation as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered rentals/confirmation.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:03:47 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-12 15:03:54 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.7ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-fe25a4afd063e5ff42a71b6ec672edf98a733b67ccf77957c9e02dc24f3315e3.css?body=1" for ::1 at 2015-08-12 15:03:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 15:03:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 15:03:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 15:03:55 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 15:03:55 -0400
+
+
+Started GET "/users/1/rentals/1" for ::1 at 2015-08-12 15:04:18 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.3ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/rentals/1/edit" for ::1 at 2015-08-12 15:04:23 -0400
+Processing by RentalsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.4ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/_form.html.erb (3.2ms)
+  Rendered rentals/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/users/1/rentals/1" for ::1 at 2015-08-12 15:04:27 -0400
+Processing by RentalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZTzv0iUQuzdwyMDPBWG7D1FVRLDA8DAoPQn6XULn/vX4eC73lL7DF2XUdFn5Lh8LoAnd3q1AztsS1aqiNCsfpQ==", "rental"=>{"name"=>"jack", "staff"=>"Student", "email"=>"", "phone"=>"", "item"=>"UBoom", "daterental(2i)"=>"8", "daterental(3i)"=>"15", "daterental(1i)"=>"2015"}, "commit"=>"Update Rental", "user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.3ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "rentals" SET "daterental" = $1, "updated_at" = $2 WHERE "rentals"."id" = $3[0m  [["daterental", "2015-08-15 00:00:00.000000"], ["updated_at", "2015-08-12 19:04:27.526094"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1/rentals/1
+Completed 302 Found in 11ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users/1/rentals/1" for ::1 at 2015-08-12 15:04:27 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.8ms)[0m  [1mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 1.5ms)
