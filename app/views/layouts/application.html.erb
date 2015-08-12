@@ -2,20 +2,66 @@
 <html>
 <head>
   <title>FrontlinesRentals</title>
+  <link href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet" type="text/css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-  <nav>
+<body class="about">
+
+<!--Navigations and Mobile Navigation-->
+<div class="mobileNavWrapper">
+  <ul class="nav">
+    <li class="icon"><a id="backsvg" href="#">
+	    <svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="40px" viewBox="0 0 70 40" enable-background="new 0 0 70 40" xml:space="preserve">
+      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="13.1" x2="39.3" y2="13.1"/>
+      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="25.1" x2="39.3" y2="25.1"/>
+      <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="37.1" x2="39.3" y2="37.1"/>
+		  </svg></a>
+    </li>
     <% if current_user %>
-    <%= link_to "Click Here to Signout", destroy_user_session_path, :method => :delete %>
+		<li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "View Equipment", items_path %></li>
+		<li><%= link_to "Signout", destroy_user_session_path, :method => :delete %></li>
     <% else %>
-    <%= link_to 'Signup', new_user_registration_path %>
-    <%= link_to 'Login', new_user_session_path %>
+		<li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Signup", new_user_registration_path %></li>
+		<li><%= link_to "Login", new_user_session_path %></li>
     <% end %>
-  </nav>
-    <h2><%= flash[:notice] %></h2>
+	</ul>
+</div>
+
+<div class="header-wrapper" id="headerWrapper">
+	<div class="header">
+
+		<a href="/" class="logo"><img src="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-293df4dd48fe0f23c20a7e7530d5caf1.png" alt="GA Front Lines"></a>
+		<ul class="nav">
+      <% if current_user %>
+		  <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "View Equipment", items_path %></li>
+			<li><%= link_to "Signout", destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Signup", new_user_registration_path %></li>
+      <li><%= link_to "Login", new_user_session_path %></li>
+      <% end %>
+		</ul>
+
+		<div id="menubuttonsvg">
+		  <svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="40px" viewBox="0 0 70 40" enable-background="new 0 0 70 40" xml:space="preserve">
+		  <line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="13.1" x2="39.3" y2="13.1"/>
+	  	<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="25.1" x2="39.3" y2="25.1"/>
+	  	<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="10.7" y1="37.1" x2="39.3" y2="37.1"/>
+	  	</svg>
+		</div>
+
+	</div> <!-- End Header-->
+</div> <!-- End Header Wrapper-->
+
+<h2><%= flash[:notice] %></h2>
+
 <%= yield %>
 
 <footer>
