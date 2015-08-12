@@ -3,8 +3,12 @@
 </div>
 
 <div class="show_items">
-
-  <h2><%= link_to "Add a New Rental Item", new_item_path %></h2>
+  <h1>Equipment</h1>
+  <h2>
+    <% if can? :create, @item %>
+    <%= link_to "Add a New Rental Item", new_item_path %>
+  <% end %>
+  </h2>
 
   <% @items.each do |item| %>
     <div class="item_info">
