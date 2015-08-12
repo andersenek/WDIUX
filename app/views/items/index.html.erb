@@ -1,11 +1,10 @@
-<header class="items_index_header">
-  <div class="header_text">
-    <h1 class="equipment">VIEW ALL EQUIPMENT</h1>
-    <h2><%= link_to "Add a New Rental Item", new_item_path %></h2>
-  </div>
-</header>
+<div class="form-page">
+  <h1 class="home-large-text">VIEW ALL <br> EQUIPMENT</h1>
+</div>
 
 <div class="show_items">
+
+  <h2><%= link_to "Add a New Rental Item", new_item_path %></h2>
 
   <% @items.each do |item| %>
     <div class="item_info">
