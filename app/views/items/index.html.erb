@@ -1,23 +1,41 @@
-<div class="form-page">
-  <h1 class="home-large-text">VIEW ALL <br> EQUIPMENT</h1>
+<section class="content-grey" id="overview">
+  <div class="complex-grid">
+    <header>
+      <h2>Welcome to<br>GA Frontlines</h2>
+      <p class="resizable medium">We’re excited to help you and your equipment needs!<br>
+        Start by viewing equipment options and requests below.</p>
+    </header>
+  </div>
+
+  <div class="note">
+      <div class="panel-grey">
+      <h4>Learn Anywhere</h4>
+      <p>Forgot your charger? Need to prototype? Browse and reserve equipment from front lines today!</p>
+      </div>
+  </div>
+
+</section>
+
+<div class="equipment-page">
+  <h1 class="home-large-text">View All <br> Equipment</h1>
 </div>
 
 <div class="show_items">
-  <h1>Equipment</h1>
   <h2>
     <% if can? :create, @item %>
-    <%= link_to "Add a New Rental Item", new_item_path %>
-  <% end %>
+      <%= link_to "Add a New Rental Item", new_item_path %>
+    <% end %>
   </h2>
 
   <% @items.each do |item| %>
     <div class="item_info">
         <%= image_tag "#{item.photo_url}", class: "item_pix" %>
-        <p><%= link_to "#{item.name}", item %></p>
+        <%= link_to "#{item.name}", item, class: "item_link" %>
         <p class="quantity">Quantity Available: <%= item.quantity %></p>
+        <p class="description">IPhone deep v direct trade, polaroid vinyl beard single-origin coffee shabby chic American Apparel Schlitz fap brunch drinking vinegar banjo wayfarers.</p>
         <form action="">
           <input class="check_box" type="checkbox" name="rent" value="Rent">
-          <span class="rent_link"><%= link_to "Rent Now" %></span>
+          <%= link_to "Rent Now", new_user_rental_path(current_user, @rental), class: "rent_link" %>
         </form>
     </div>
   <% end %>
