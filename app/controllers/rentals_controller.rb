@@ -12,11 +12,13 @@ def all
 end
 
 def policy
+end
 
+def confirmation
 end
 
 def show
-  @user = User.find_by(session[:user_id])
+  @user = User.find(current_user)
   @rental = Rental.find(params[:id])
 end
 
@@ -30,7 +32,7 @@ def create
     @rental = @user.rentals.create!(rental_params)
     @rental.user = current_user
     if @rental.save
-      redirect_to user_rentals_path(@user)
+      redirect_to rentals_confirmation_path
     else
       redirect_to new_user_rental_path
     end
@@ -39,11 +41,13 @@ end
 def edit
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :update, @rental
 end
 
 def update
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :update, @rental
   @rental.update(rental_params)
   redirect_to user_rental_path(@user, @rental)
 end
@@ -51,13 +55,14 @@ end
 def destroy
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  authorize! :destroy, @rental
   @rental.destroy
   redirect_to rentals_all_path
 end
 
 private
 def rental_params
-  params.require(:rental).permit(:name, :staff, :email, :phone, :item)
+  params.require(:rental).permit(:name, :staff, :email, :phone, :item, :daterental)
 end
 
 end
