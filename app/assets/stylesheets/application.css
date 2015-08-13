@@ -39,6 +39,10 @@ body {
   background: whitesmoke;
 }
 
+body.yellow {
+  background: #FCD410;
+}
+
 li {
   padding: 0;
   list-style-type: none;
@@ -46,12 +50,10 @@ li {
 
 /* Main Styles */
 
-h1.home-large-text {
+h1.home-large-text, h1.home-medium-text {
   font-family: "PFDinTextCompPro-Bold", sans-serif;
   color: white;
-  font-size: 7em;
   margin: 0 auto;
-  line-height: .8;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
@@ -60,12 +62,37 @@ h1.home-large-text {
   transform: translate(-50%, -50%);
 }
 
+h1.home-large-text {
+  font-size: 7em;
+  line-height: .8;
+}
+
+h1.home-medium-text {
+  font-size: 6em;
+  line-height: .8;
+}
+
 .section-top {
   height: 84vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/large-images/915-lounge-f8ace8603d59955d13d465a61fb9d1dc.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 36.250rem;
+}
+
+.form-page, .request-page {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.form-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
+}
+
+.request-page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/large-images/915-lounge-f8ace8603d59955d13d465a61fb9d1dc.jpg);
 }
 
 /* Navigation */
@@ -224,14 +251,6 @@ ul.nav {
 
 /* Forms */
 
-.form-page {
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
-  position: relative;
-}
-
 .forms {
   font-family: "News706BT-RomanC", Georgia;
   width: 70%;
@@ -315,6 +334,51 @@ input.submit {
   width: 80%;
 }
 
+/* Requests */
+
+.all-requests {
+  background: #fff;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+}
+
+.request-titles {
+  font-family: "News706BT-RomanC", Georgia;
+  background: #FEEC9F;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+.item, .name, .identification, .email, .phone {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.request-item, .request-id, .request-phone, .request-name, .request-email {
+  border-bottom: 5px solid #fff;
+  padding: 10px 40px;
+}
+
+.request-item {
+  background: #DADADA;
+}
+
+.request-id, .request-phone, .request-name, .request-email {
+  background: #E9E9E9;
+}
+
+p a {
+  font-size: 1em;
+  font-weight: normal;
+  color: black;
+}
+
 /* Footer */
 
 footer {
@@ -355,7 +419,48 @@ footer p {
   color: #dadada;
   margin: .6em 0em;
 }
- /* Media Queries */
+
+/* Justin's Styles */
+
+.show_items {
+  display: block;
+  margin: 6em;
+  text-align: center;
+}
+
+.item_info {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 3em;
+}
+
+.item_pix {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 180px;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+}
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.check_box {
+  margin-right: 0.5em;
+}
+
+
+/* Media Queries */
 
 @media screen and (max-width: 1550px) { /*LARGER SCREEN ADJUSTMENTS*/
 
@@ -422,42 +527,4 @@ p {
 
 .content h2 {
   font-size: 1.25em;
-}
-}
-
-.show_items {
-  display: block;
-  margin: 6em;
-  text-align: center;
-}
-
-.item_info {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin: 3em;
-}
-
-.item_pix {
-  width: 200px;
-  height: 200px;
-  border: 3px solid white;
-  border-radius: 180px;
-  box-shadow: -1px 0px 9px 1px darkgrey;
-}
-
-a {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-}
-
-.quantity {
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.check_box {
-  margin-right: 0.5em;
 }
