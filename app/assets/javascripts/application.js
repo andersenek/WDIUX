@@ -27,3 +27,13 @@ $(document).on('click', "#backsvg", function() {
   $('.mobileNavWrapper').removeClass('showNav')
   console.log("close click is working")
 });
+
+// Smooth Scroll on Equiment View Page
+$(document).on('click', ".js-arrow-down", function() {
+     console.log("arrow click is working")
+     event.preventDefault();
+     var target = "#" + this.getAttribute('data-target');
+     $('html, body').animate({
+        scrollTop: $(target).offset().top
+        }, 2000);
+     });
