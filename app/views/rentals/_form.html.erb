@@ -1,23 +1,26 @@
 <ul>
-  <%= form_for [@user, @rental] do |f| %>
+<%= form_for [@user, @rental] do |f| %>
 
-      <%= f.label :name, "Your Name" %>
-        <%= f.text_field :name %>
+  <%= f.label :name, "Your Name" %>
+    <%= f.text_field :name %>
 
       <%= f.label :staff, "Staff or Student" %>
         <%= f.select(:staff, options_for_select([["Student", "Student"],["Staff", "Staff"]])) %>
 
-        <%= f.label :email, "Email" %>
-          <%= f.text_field :email %>
+          <%= f.label :email, "Email" %>
+            <%= f.text_field :email %>
 
-          <%= f.label :phone, "Phone" %>
-            <%= f.text_field :phone %>
+              <%= f.label :phone, "Phone" %>
+                <%= f.text_field :phone %>
 
-            <%= f.label :item, "Item to Rent" %>
-              <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+                  <%= f.label :item, "Item to Rent" %>
+                    <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
 
-              <%= f.label :daterental, "Date for Rental" %>
-                <%= f.date_select :daterental, :order => [:month, :day, :year] %>
+                      <%= f.label :quantity %>
+                        <%= f.select(:quantity, 0..10) %>
+
+                          <%= f.label :daterental, "Date for Rental" %>
+                            <%= f.date_select :daterental, :order => [:month, :day, :year] %>
 
       <%= f.submit %>
     <% end %>

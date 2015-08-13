@@ -11,6 +11,12 @@ def all
   @rental = Rental.all.order('created_at DESC')
 end
 
+def admin
+  authorize! :read, @user
+  @user = User.find_by(session[:user_id])
+  @rental = Rental.all.order('created_at DESC')
+end
+
 def policy
 end
 
@@ -62,7 +68,7 @@ end
 
 private
 def rental_params
-  params.require(:rental).permit(:name, :staff, :email, :phone, :item, :daterental)
+  params.require(:rental).permit(:name, :staff, :email, :phone, :item, :quantity, :daterental)
 end
 
 end

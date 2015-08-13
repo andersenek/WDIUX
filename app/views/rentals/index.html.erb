@@ -6,4 +6,8 @@
 
 <p><%= link_to "See All Requests", rentals_all_path %></p>
 
+<% if can? :read, @user %>
+<p><%= link_to "Admin Controller", rentals_admin_path %></p>
+<% end %>
+
 <p><%= link_to "GA Policy on Rentals", rentals_policy_path %></p>
