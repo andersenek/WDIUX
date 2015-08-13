@@ -539,7 +539,64 @@ footer p {
   margin: .6em 0em;
 }
 
+<<<<<<< HEAD
+/* Items Index View */
+
+.show_items {
+  display: block;
+  margin: 6em;
+  text-align: center;
+}
+
+.item_info {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 3em;
+}
+
+.item_pix {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 180px;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+}
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.check_box {
+  margin-right: 0.5em;
+}
+
+.sort_equipment {
+  display: block;
+  font-family: times;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 150px;
+}
+
+
+
 /* Media Queries */
+
 
 @media screen and (max-width: 1550px) { /*LARGER SCREEN ADJUSTMENTS*/
 
@@ -591,7 +648,7 @@ p {
 .content h2 {
   font-size: 1.5em;
 }
-}
+
 
 @media screen and (max-width: 500px) { /*TYPICAL MOBILE ADJUSTMENTS*/
 
@@ -606,4 +663,6 @@ p {
 
 .content h2 {
   font-size: 1.25em;
+}
+
 }

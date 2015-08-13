@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20150812195503) do
     t.string   "email"
     t.string   "phone"
     t.string   "item"
+
+    t.integer  "quantity"
     t.datetime "daterental"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
