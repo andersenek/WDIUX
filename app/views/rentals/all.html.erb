@@ -1,13 +1,68 @@
-<h1>All Rentals</h1>
-<ul>
-<li><% @rental.each do |rental| %>
-      <%= link_to "#{rental.name}", user_rental_path(@user,rental) %></li>
-      <li><%= rental.staff %></li>
-      <li><%= rental.email %></li>
-      <li><%= rental.phone %></li>
-      <li><%= rental.item %></li>
-      <li><%= rental.daterental %></li>
-      <br>
-<% end %>
+<div class="request-page">
+  <h1 class="home-medium-text">Equipment<br>Requests</h1>
+</div>
 
-</ul>
+<div class="all-requests">
+  <div class="titles">
+  <div class="request-titles">
+    <h4>Item:</h4>
+    <div class="item">
+    <% @rental.each do |rental| %>
+      <div class="request-item">
+        <p><%= rental.item %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Name:</h4>
+    <div class="name">
+    <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= link_to "#{rental.name}", user_rental_path(@user,rental) %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Student/Staff:</h4>
+    <div class="identification">
+    <% @rental.each do |rental| %>
+      <div class="request-id">
+        <p><%= rental.staff %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Email:</h4>
+    <div class="email">
+    <% @rental.each do |rental| %>
+      <div class="request-email">
+        <p><%= rental.email %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Phone:</h4>
+    <div class="phone">
+    <% @rental.each do |rental| %>
+      <div class="request-phone">
+        <p><%= rental.phone %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+<script>
+  $('body').addClass('yellow');
+</script>

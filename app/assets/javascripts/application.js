@@ -17,14 +17,13 @@
 
 
 // Navigation with jQuery
-$(function(){
-  $( '#menubuttonsvg' ).click(function(){
-    $('.mobileNavWrapper').toggleClass('showNav')
-    })
-  })
 
-$(function(){
-  $( '#backsvg' ).click(function(){
-    $('.mobileNavWrapper').removeClass('showNav')
-    })
-  })
+$(document).on('click', "#menubuttonsvg", function() {
+    $('.mobileNavWrapper').toggleClass('showNav')
+    console.log("click is working")
+});
+
+$(document).on('click', "#backsvg", function() {
+  $('.mobileNavWrapper').removeClass('showNav')
+  console.log("close click is working")
+});
