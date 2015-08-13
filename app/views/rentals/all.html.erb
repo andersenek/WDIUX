@@ -59,6 +59,17 @@
     </div>
   </div>
 
+  <div class="request-titles">
+    <h4>Quantity:</h4>
+    <div class="name">
+    <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= rental.quantity %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
   </div>
 
 </div>

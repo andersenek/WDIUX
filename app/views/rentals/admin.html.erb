@@ -20,7 +20,7 @@
     <div class="name">
     <% @rental.each do |rental| %>
       <div class="request-name">
-        <p><%= link_to "#{rental.name}", edit_user_rental_path(@user,rental) %></p>
+        <p><%= rental.name %></p>
       </div>
     <% end %>
     </div>
@@ -54,6 +54,17 @@
     <% @rental.each do |rental| %>
       <div class="request-phone">
         <p><%= rental.phone %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Quantity:</h4>
+    <div class="name">
+    <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= rental.quantity %></p>
       </div>
     <% end %>
     </div>

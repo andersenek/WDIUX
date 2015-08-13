@@ -21089,3 +21089,228 @@ Processing by RentalsController#policy as HTML
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
   Rendered rentals/policy.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 17:40:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 352ms (Views: 271.8ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/rentals/admin" for ::1 at 2015-08-13 17:40:23 -0400
+Processing by RentalsController#admin as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (1.2ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/admin.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/rentals/admin" for ::1 at 2015-08-13 17:41:55 -0400
+Processing by RentalsController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/admin.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:41:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:41:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:41:55 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:41:55 -0400
+
+
+Started GET "/assets/application.self-8251e1019a2c3277bbc60c608b9f46a756f87c0611218576f6c461038ec80c77.css?body=1" for ::1 at 2015-08-13 17:41:55 -0400
+
+
+Started GET "/rentals/admin" for ::1 at 2015-08-13 17:42:27 -0400
+Processing by RentalsController#admin as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.4ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/admin.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:42:27 -0400
+
+
+Started GET "/assets/application.self-8251e1019a2c3277bbc60c608b9f46a756f87c0611218576f6c461038ec80c77.css?body=1" for ::1 at 2015-08-13 17:42:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:42:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:42:27 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:42:27 -0400
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-13 17:43:04 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-13 17:43:24 -0400
+Processing by RentalsController#all as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.5ms)[0m  SELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC
+  Rendered rentals/all.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:43:24 -0400
+
+
+Started GET "/assets/application.self-8251e1019a2c3277bbc60c608b9f46a756f87c0611218576f6c461038ec80c77.css?body=1" for ::1 at 2015-08-13 17:43:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:43:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:43:24 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:43:24 -0400
+
+
+Started GET "/" for ::1 at 2015-08-13 17:43:28 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rentals/admin" for ::1 at 2015-08-13 17:43:29 -0400
+Processing by RentalsController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/admin.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2/rentals/1/edit" for ::1 at 2015-08-13 17:44:59 -0400
+Processing by RentalsController#edit as HTML
+  Parameters: {"user_id"=>"2", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.3ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/_form.html.erb (106.1ms)
+  Rendered rentals/edit.html.erb within layouts/application (126.1ms)
+Completed 200 OK in 157ms (Views: 152.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rentals/admin" for ::1 at 2015-08-13 17:45:34 -0400
+Processing by RentalsController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.6ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/admin.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:45:34 -0400
+
+
+Started GET "/assets/application.self-8251e1019a2c3277bbc60c608b9f46a756f87c0611218576f6c461038ec80c77.css?body=1" for ::1 at 2015-08-13 17:45:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:45:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:45:34 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:45:34 -0400
+
+
+Started GET "/users/2/rentals/1/edit" for ::1 at 2015-08-13 17:45:36 -0400
+Processing by RentalsController#edit as HTML
+  Parameters: {"user_id"=>"2", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 1[0m
+  [1m[35mRental Load (0.3ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/_form.html.erb (3.4ms)
+  Rendered rentals/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2015-08-13 17:45:42 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (110.7ms)
+Completed 200 OK in 150ms (Views: 141.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 17:45:44 -0400
+Processing by RentalsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-13 17:45:47 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2/rentals/1" for ::1 at 2015-08-13 17:45:50 -0400
+Processing by RentalsController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from show at /Users/pdavies/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:27)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRental Load (0.6ms)[0m  SELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered rentals/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 24.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/rentals/all" for ::1 at 2015-08-13 17:46:57 -0400
+Processing by RentalsController#all as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 1
+  [1m[36mRental Load (0.4ms)[0m  [1mSELECT "rentals".* FROM "rentals"  ORDER BY created_at DESC[0m
+  Rendered rentals/all.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:46:58 -0400
+
+
+Started GET "/assets/application.self-8251e1019a2c3277bbc60c608b9f46a756f87c0611218576f6c461038ec80c77.css?body=1" for ::1 at 2015-08-13 17:46:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:46:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:46:58 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:46:58 -0400
