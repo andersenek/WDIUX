@@ -2,6 +2,6 @@
 <%= render partial: "form" %>
 <% if can? :destroy, @item %>
 <%= form_for [@item], method: :delete do |f| %>
-  <%= f.submit "Delete!" %>
+  <%= f.submit "Delete!", data: { confirm: 'Are you sure?' } %>
     <% end %>
 <% end %>

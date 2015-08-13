@@ -1,0 +1,79 @@
+<div class="request-page">
+  <h1 class="home-medium-text">Admin Equipment<br>Controller</h1>
+</div>
+
+<div class="all-requests">
+  <div class="titles">
+  <div class="request-titles">
+    <h4>Item:</h4>
+    <div class="item">
+    <% @rental.each do |rental| %>
+      <div class="request-item">
+        <p><%= rental.item %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Name:</h4>
+    <div class="name">
+    <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= link_to "#{rental.name}", edit_user_rental_path(@user,rental) %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Student/Staff:</h4>
+    <div class="identification">
+    <% @rental.each do |rental| %>
+      <div class="request-id">
+        <p><%= rental.staff %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Email:</h4>
+    <div class="email">
+    <% @rental.each do |rental| %>
+      <div class="request-email">
+        <p><%= rental.email %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Phone:</h4>
+    <div class="phone">
+    <% @rental.each do |rental| %>
+      <div class="request-phone">
+        <p><%= rental.phone %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Edit/Fulfill:</h4>
+    <div class="name">
+    <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= link_to "Edit/Fullfill Request", edit_user_rental_path(@user,rental) %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+<script>
+  $('body').addClass('yellow');
+</script>
