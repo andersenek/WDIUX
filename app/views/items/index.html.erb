@@ -18,9 +18,16 @@
 
 <div class="equipment-page">
   <h1 class="home-large-text">View All <br> Equipment</h1>
+
+  <div class="see-more">
+    <h5>View all equipment below</h5>
+      <a class="js-arrow-down" href="#show_items" data-target="here">
+        <img alt="down arrow" class="arrow-down" src="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/icons/down-arrow-clear-908bde1ecd6a82df7d97747d928d3a8c.png">
+      </a>
+  </div>
 </div>
 
-<div class="show_items">
+<div class="show_items" id="here">
   <h2>
     <% if can? :create, @item %>
       <%= link_to "Add a New Rental Item", new_item_path %>
