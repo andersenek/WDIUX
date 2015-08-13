@@ -72,15 +72,7 @@ h1.home-medium-text {
   line-height: .8;
 }
 
-.section-top {
-  height: 84vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/large-images/915-lounge-f8ace8603d59955d13d465a61fb9d1dc.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 36.250rem;
-}
-
-.form-page, .request-page {
+.form-page, .request-page, .equipment-page {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,11 +80,15 @@ h1.home-medium-text {
 }
 
 .form-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg);
 }
 
 .request-page{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.701961), rgba(0, 0, 0, 0.701961)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/large-images/915-lounge-f8ace8603d59955d13d465a61fb9d1dc.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/shared/large-images/915-lounge-f8ace8603d59955d13d465a61fb9d1dc.jpg);
+}
+
+.equipment-page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/education/web-development-immersive/large-images/students-coding-b1be3d04be4748bdd81b02e213cf0df8.jpg);
 }
 
 /* Navigation */
@@ -334,6 +330,118 @@ input.submit {
   width: 80%;
 }
 
+/* Equipment */
+
+.content-grey {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.complex-grid {
+  max-width: 960px;
+  margin: 0 auto;
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.complex-grid h2 {
+    font-family: "PFDinTextCompPro-Bold", sans-serif;
+    color: #000;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 6em;
+    line-height: .8;
+}
+
+p.resizable.medium {
+  font-family: "News706BT-RomanC", Georgia;
+  font-size: 1.2em;
+}
+
+.note {
+  float: right;
+  width: 20%;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+.note h4 {
+  line-height: 1.2;
+  font-family: "Avenir", sans-serif;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+
+.note p {
+  font-family: "News706BT-RomanC", Georgia;
+  font-size: 1em;
+}
+
+.panel-grey {
+  text-align: center;
+  background: #fff;
+  padding: 2em;
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+}
+
+.show_items {
+  display: block;
+  margin: 1em 6em;
+  text-align: center;
+}
+
+.item_info {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 3em;
+}
+
+.item_pix {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  border-radius: 180px;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+}
+
+.check_box {
+  margin-right: 0.5em;
+}
+
+p.description {
+  font-family: "News706BT-RomanC", Georgia;
+  font-size: .8em;
+}
+
+a.rent_link, .quantity {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+a.item_link {
+  font-family: "Avenir", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 5px 0px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
 /* Requests */
 
 .all-requests {
@@ -419,46 +527,6 @@ footer p {
   color: #dadada;
   margin: .6em 0em;
 }
-
-/* Justin's Styles */
-
-.show_items {
-  display: block;
-  margin: 6em;
-  text-align: center;
-}
-
-.item_info {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin: 3em;
-}
-
-.item_pix {
-  width: 200px;
-  height: 200px;
-  border: 3px solid white;
-  border-radius: 180px;
-  box-shadow: -1px 0px 9px 1px darkgrey;
-}
-
-a {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-}
-
-.quantity {
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.check_box {
-  margin-right: 0.5em;
-}
-
 
 /* Media Queries */
 
