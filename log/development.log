@@ -11246,3 +11246,1397 @@ Processing by ItemsController#index as HTML
   [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
   Rendered items/index.html.erb within layouts/application (11.5ms)
 Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:43:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (167.3ms)
+Completed 200 OK in 268ms (Views: 237.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.self-1b7bff82f13b06dc851e33fc34e83d5df88ab517e51564f9c51952f69a740247.css?body=1" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:43:16 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:43:36 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 81ms (Views: 73.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-ecf09423893a4a9adcd6fb9a159c06c40732669abe6089ce9783dcf325b5b5fa.css?body=1" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:43:36 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:44:31 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-ecf09423893a4a9adcd6fb9a159c06c40732669abe6089ce9783dcf325b5b5fa.css?body=1" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:44:31 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:44:49 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/application.self-ecf09423893a4a9adcd6fb9a159c06c40732669abe6089ce9783dcf325b5b5fa.css?body=1" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:44:50 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:46:08 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-a7c9a5a64780581ce9d78303fd0c75f2141ae741488b33d9ffb2c36fcde61770.css?body=1" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:46:08 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:46:55 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-b2d3e5c8fef4a8ea159d3b315c2ead29ae87cfa7d5b45098abd1c436d72e4654.css?body=1" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:46:55 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:47:06 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-224468248f434f5b0fb63b3904993b3c027695bd238d062d90c551298af0d60e.css?body=1" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:47:06 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:47:44 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-fd4533b09bce1dfadcb6eef22e3fa9e6ddd9f17a353bae8a241d1517d24766de.css?body=1" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:47:44 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:47:51 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-459e513b8eb5751e314718931e8012f85e5d37c537c92703db646a851501ea1f.css?body=1" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:47:51 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:48:00 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-47801376c575acf659b244a7e8f0f82b69b20a3a22c9265b3f903fab8784893e.css?body=1" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:48:00 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:48:04 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c870123c9b29a362c1e997a63cd5d688e80039a15aa00b0c814f0a5a803c368d.css?body=1" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:48:04 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:48:14 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-32290614cecc554a2f966288f55b9266724241f9821c611d951ee162df1c0d4d.css?body=1" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:48:14 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:48:23 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/application.self-acef9c537c059e95ef9660d662d6225be0db319b9db8423bd0f64e135e311ab4.css?body=1" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:48:23 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:49:05 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-b771b2a78f4d67b9b2092281a4f971be4076b99e8160bd9c50dc1c0cc516c4ba.css?body=1" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:49:05 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:49:10 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-acef9c537c059e95ef9660d662d6225be0db319b9db8423bd0f64e135e311ab4.css?body=1" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:49:10 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:49:20 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-13c09efeefcfedadc7925a1992ca61dfe4c9517d3c55ca4b25039c1566667fad.css?body=1" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:49:20 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:49:25 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5041cf233c16f6b0c3b4521e66588c643550197fecac0c9af5bfa74f2b41f2a8.css?body=1" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:49:25 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:49:37 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-24bacd0ef0168dc159ff5ab47a904504245c4448cc833ba745fd9a2bbe4b5a7e.css?body=1" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:49:37 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:49:38 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:51:57 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 137ms (Views: 131.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-59387872572efe9f092ac875eee31ab7691eb5e3d6f754e47edacfc4e72b0911.css?body=1" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:51:57 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:51:59 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 137ms (Views: 130.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/application.self-59387872572efe9f092ac875eee31ab7691eb5e3d6f754e47edacfc4e72b0911.css?body=1" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:51:59 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:52:13 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 154ms (Views: 149.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-0a9f5d626b8a8f6ca19f470997348a8f75d2116e1a970023ec9c5ec9f27b36de.css?body=1" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:52:13 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:52:15 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 101ms (Views: 96.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-0a9f5d626b8a8f6ca19f470997348a8f75d2116e1a970023ec9c5ec9f27b36de.css?body=1" for ::1 at 2015-08-12 16:52:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:52:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:52:16 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (54.9ms)
+Completed 200 OK in 146ms (Views: 137.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-0a9f5d626b8a8f6ca19f470997348a8f75d2116e1a970023ec9c5ec9f27b36de.css?body=1" for ::1 at 2015-08-12 16:52:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:52:17 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:52:26 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 152ms (Views: 146.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/application.self-b7a41ce11bbb04658875df7dd017e0f7096782b4ccae21b25fd8e0068238d4a5.css?body=1" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:52:26 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:53:36 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 189ms (Views: 183.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-fa2a9e22e7df89848f0a8da063db0e59ffd3fe874e102a962a5828e5ae8391cd.css?body=1" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:53:37 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:53:37 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 142ms (Views: 135.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/application.self-fa2a9e22e7df89848f0a8da063db0e59ffd3fe874e102a962a5828e5ae8391cd.css?body=1" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:53:38 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:54:00 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 156ms (Views: 150.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-d7f9bc17d056ae64bbda8d438c772346a6ade8f0c76bd49cab3db02cec545fac.css?body=1" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:54:01 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:54:04 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 120ms (Views: 114.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-d7f9bc17d056ae64bbda8d438c772346a6ade8f0c76bd49cab3db02cec545fac.css?body=1" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:54:04 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:54:14 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 148ms (Views: 142.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-447f5f80b709ac672eba77ba437132b4775ff54b086e3d9479ec50fcd68a072c.css?body=1" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:54:15 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:54:43 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 156ms (Views: 150.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-bd3115d8456e0a2a85cf66731bc8a3abd1c54f9ba60a739d375951b393ee20ca.css?body=1" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:54:44 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:54:48 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 161ms (Views: 156.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-364e3352d89b6a1063a339794cac8654aaabe6f98798758db0fadffca371705e.css?body=1" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/application.self-79cc01dd4669a77828c76374e165ede417881da9710b40069bdd68d7a2606d2c.js?body=1" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 16:54:49 -0400
+
+
+Started GET "/" for ::1 at 2015-08-12 16:57:40 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/Justin/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 136ms (Views: 110.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-12 16:57:40 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/Justin/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 82ms (Views: 74.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-7bd50530cea806a2731371bd32525e21364f1ebbfc7eb7e80bcc71be0a9ef26c.css?body=1" for ::1 at 2015-08-12 16:57:40 -0400
+
+
+Started GET "/items" for ::1 at 2015-08-12 16:57:45 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 112ms (Views: 106.8ms | ActiveRecord: 1.3ms)
