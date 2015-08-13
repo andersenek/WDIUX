@@ -1,6 +1,10 @@
-
+<br>
+<br>
 <h1><%= @item.name %></h1>
-<p><%= link_to "(Edit this Item)", edit_item_path(@item) %></p>
+<p><% if can? :update, @item %>
+  <%= link_to "(Edit this Item)", edit_item_path(@item) %>
+<% end %>
+</p>
 <p>Item Condition: <%= @item.condition %></p>
 <p>Item Quantity: <%= @item.quantity %></p>
 <%= image_tag @item.photo_url %>
