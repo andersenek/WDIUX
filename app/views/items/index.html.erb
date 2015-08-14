@@ -20,7 +20,7 @@
   <h1 class="home-large-text-equipment">View All <br> Equipment</h1>
 
   <div class="see-more">
-    <%= select_tag 'item_id', options_from_collection_for_select(@items, "name", "name"), :onchange => "window.location.replace('/items/'+this.value);", class: "submit", :prompt => 'Select Equipment Item' %>
+    <%= select_tag 'item_id', options_from_collection_for_select(@items, "id", "name"), :onchange => "window.location.replace('/items/'+this.value);", class: "submit", :prompt => 'Select Equipment Item' %>
     <%= link_to "View Requests", rentals_all_path, class: "view-requests" %>
     <h5>View all equipment below</h5>
     <a class="js-arrow-down" href="#show_items" data-target="here">
@@ -29,6 +29,13 @@
   </div>
 
 </div>
+
+<div class="show_items" id="here">
+  <h2>
+    <% if can? :read, @user %>
+      <%= link_to "Admin Controller", rentals_admin_path %>
+    <% end %>
+</h2>
 
 <div class="show_items" id="here">
   <h2>
