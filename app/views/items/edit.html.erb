@@ -1,7 +1,14 @@
-<h1>Edit Equipment</h1>
+<div class="form-page">
+  <h1 class="home-large-text">Edit<br>Equipment</h1>
+</div>
+
+<div class="forms">
+
 <%= render partial: "form" %>
 <% if can? :destroy, @item %>
 <%= form_for [@item], method: :delete do |f| %>
-  <%= f.submit "Delete!", data: { confirm: 'Are you sure?' } %>
+  <%= f.submit "Delete!", data: { confirm: 'Are you sure?' }, class: 'delete' %>
     <% end %>
 <% end %>
+
+</div>

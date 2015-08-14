@@ -1,17 +1,16 @@
-<ul>
+
   <%= form_for @item do |f| %>
       <%= f.label :name, "Item Name" %>
         <%= f.text_field :name %>
 
       <%= f.label :condition %>
-        <%= f.select(:condition, options_for_select([["Poor", "Poor"], ["Fair", "Fair"],["Good", "Good"],["Like New", "Like New"]])) %>
+        <%= f.select(:condition, options_for_select([["Poor", "Poor"], ["Fair", "Fair"],["Good", "Good"],["Like New", "Like New"]]), {}, {class: 'view-requests'}) %>
 
         <%= f.label :quantity %>
-          <%= f.select(:quantity, 0..10) %>
+          <%= f.select(:quantity, 0..10, {}, {class: 'view-requests'}) %>
 
           <%= f.label :photo_url, "Photo of Item" %>
             <%= f.text_field :photo_url %>
 
-      <%= f.submit %>
+      <%= f.submit class: 'submit' %>
     <% end %>
-</ul>
