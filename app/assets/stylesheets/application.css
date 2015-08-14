@@ -668,7 +668,7 @@ footer p {
   float: right;
   background: white;
   box-shadow: -1px 0px 9px 1px darkgrey;
-  height: 500px;
+  height: 750px;
   width: 600px;
   margin-right: 5em;
   margin-left: 0.1em;
@@ -735,7 +735,9 @@ footer p {
 
 }
 
-@media screen and (max-width: 1210px) { /*TYPICAL LANDSCAPE TABLET ADJUSTMENTS*/
+/*TYPICAL LANDSCAPE TABLET ADJUSTMENTS*/
+
+@media screen and (max-width: 1210px) {
 .header ul li a {
   padding: 18px 13px 0 ;
 }
@@ -800,8 +802,8 @@ p {
   margin: 0 auto;
 }
 
-
-@media screen and (max-width: 500px) { /*TYPICAL MOBILE ADJUSTMENTS*/
+/*TYPICAL MOBILE ADJUSTMENTS*/
+@media screen and (max-width: 500px) {
 
 p {
   font-size: .9em;
@@ -849,4 +851,5 @@ footer {
   padding: 10px 30px;
 }
 
+}
 }
