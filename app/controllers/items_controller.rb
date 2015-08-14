@@ -6,10 +6,15 @@ def index
 end
 
 def show
+  @items = Item.all
   @item = Item.find(params[:id])
+  @user = current_user
+  @rental = Rental.new
 end
 
 def new
+  @user = current_user
+  @rental = Rental.new
   @item = Item.new
   authorize! :create, @item
 end
