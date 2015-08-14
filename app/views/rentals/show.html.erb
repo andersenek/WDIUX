@@ -1,12 +1,75 @@
-<h1>Renter Info</h1>
-<p>Name: <%= @rental.name %>
-  <% if can? :update, @rental %>
-  <%= link_to "(Edit this Rental)", edit_user_rental_path(@user, @rental) %>
-<% end %>
-</p>
-<p>Staff or Student: <%= @rental.staff %></p>
-<p>Email: <%= @rental.email %></p>
-<p>Phone Number: <%= @rental.phone %></p>
-<p>Item to Rent: <%= @rental.item %></p>
-<p>Amount Requested: <%= @rental.quantity %></p>
-<p>Desired Rental Date: <%= @rental.daterental.strftime("%m/%d/%Y") %></p>
+<div class="request-page">
+  <h1 class="home-medium-text">Renter<br>Information</h1>
+</div>
+
+
+<div class="all-requests">
+  <p><%= @rental.name %>
+    <% if can? :update, @rental %>
+    <%= link_to "(Edit this Rental)", edit_user_rental_path(@user, @rental) %>
+    <% end %>
+  </p>
+
+  <div class="titles">
+  <div class="request-titles">
+    <h4>Item:</h4>
+    <div class="item">
+      <div class="request-item">
+        <p><%= @rental.item %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="request-titles">
+    <h4>Date of Rental:</h4>
+    <div class="name">
+      <div class="request-name">
+        <p><%= @rental.daterental.strftime("%d %b %y") %></p>
+      </div>
+    </div>
+  </div>
+
+    <div class="request-titles">
+      <h4>Student/Staff:</h4>
+      <div class="identification">
+        <div class="request-id">
+          <p><%= @rental.staff %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-titles">
+      <h4>Email:</h4>
+      <div class="email">
+        <div class="request-email">
+          <p><%= @rental.email %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-titles">
+      <h4>Phone:</h4>
+      <div class="phone">
+        <div class="request-phone">
+          <p><%= @rental.phone %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-titles">
+      <h4>Quantity:</h4>
+      <div class="quantity-all">
+        <div class="request-quantity">
+          <p><%= @rental.quantity %></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $('body').addClass('yellow');
+</script>

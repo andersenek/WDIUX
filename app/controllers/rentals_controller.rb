@@ -31,6 +31,8 @@ end
 def new
   @user = current_user
   @rental = Rental.new
+  @rentals = Rental.all
+  @items = Item.all
 end
 
 def create
@@ -45,8 +47,10 @@ def create
 end
 
 def edit
+  @items = Item.all
   @user = User.find_by(session[:user_id])
   @rental = Rental.find(params[:id])
+  @rentals = Rental.all
   authorize! :update, @rental
 end
 
