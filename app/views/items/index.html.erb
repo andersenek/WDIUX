@@ -17,10 +17,20 @@
 </section>
 
 <div class="equipment-page">
-  <h1 class="home-large-text">View All <br> Equipment</h1>
+  <h1 class="home-large-text-equipment">View All <br> Equipment</h1>
+
+  <div class="see-more">
+    <%= select_tag 'item_id', options_from_collection_for_select(@items, "name", "name"), :onchange => "window.location.replace('/items/'+this.value);", class: "submit", :prompt => 'Select Equipment Item' %>
+    <%= link_to "View Requests", rentals_all_path, class: "view-requests" %>
+    <h5>View all equipment below</h5>
+    <a class="js-arrow-down" href="#show_items" data-target="here">
+      <img alt="down arrow" class="arrow-down" src="http://i59.tinypic.com/5vdw5g.png">
+    </a>
+  </div>
+
 </div>
 
-<div class="show_items">
+<div class="show_items" id="here">
   <h2>
     <% if can? :create, @item %>
       <%= link_to "Add a New Rental Item", new_item_path %>

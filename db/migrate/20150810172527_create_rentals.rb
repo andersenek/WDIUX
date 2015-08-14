@@ -6,6 +6,7 @@ class CreateRentals < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.string :item
+      t.integer :quantity
       t.datetime :daterental
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
