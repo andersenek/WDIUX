@@ -606,6 +606,102 @@ footer p {
   margin: .6em 0em;
 }
 
+/* Items Index View */
+
+.show_items {
+  display: block;
+  margin: 6em;
+  text-align: center;
+}
+
+.item_info {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 3em;
+}
+
+.item_pix {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 180px;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+}
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.check_box {
+  margin-right: 0.5em;
+}
+
+.sort_equipment {
+  display: block;
+  font-family: times;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 150px;
+}
+
+/* Items Show View */
+
+.item-show-page {
+  display: block;
+  margin-top: 2em;
+  margin-left: 8em;
+  margin-right: 7em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid grey;
+}
+
+.reserve-item {
+  display: block;
+  float: right;
+  background: white;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+  height: 500px;
+  width: 600px;
+  margin-right: 5em;
+  margin-left: 0.1em;
+  padding: 20px;
+  text-align: center;
+}
+
+.item_image {
+  height: 250px;
+  width: 325px;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: -1px 0px 9px 1px darkgrey;
+}
+
+.item-info {
+  margin-left: 8em;
+  text-align: center;
+  width: 300px;
+}
+
+.quantity_condition {
+  width: 300px;
+  margin-top: 1px;
+  border-top: 1px solid black;
+}
 /* Media Queries */
 
 
