@@ -14,26 +14,26 @@
  *= require_self
  */
 
-@font-face {
-  font-family: "PFDin";
-  src: url("http://ericaandersen.net/fonts/PF Din Text Comp Pro Bold.ttf") format("tff");
+ @font-face {
+   font-family: "PFDin";
+   src: url("http://ericaandersen.net/PFDin.ttf") format("ttf");
+   font-style: normal;
+   font-weight: normal;
+ }
+
+ @font-face {
+   font-family: 'News706';
+   src: url("http://ericaandersen.net/News706.ttf") format("ttf");
+   font-style: normal;
+   font-weight: normal;
+ }
+
+ @font-face {
+  font-family: "Avenir";
+  src: url("http://ericaandersen.net/fonts/Avenir.ttc") format("ttc");
   font-style: normal;
   font-weight: normal;
-}
-
-@font-face {
-  font-family: "News706";
-  src: url("News706 BT Roman.ttf") format("ttf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
- font-family: "Avenir";
- src: url("http://ericaandersen.net/fonts/Avenir.ttc") format("ttc");
- font-style: normal;
- font-weight: normal;
-}
+ }
 
 body {
   background: whitesmoke;
