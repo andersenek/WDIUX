@@ -20164,3 +20164,1991 @@ Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2a
 
 
 Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-12 23:38:25 -0400
+
+
+Started GET "/" for ::1 at 2015-08-13 16:43:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RentalsController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-13 16:43:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 339ms (Views: 322.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/application.self-c3d11cd1914ba0b634316c9ec3070c2f59c6eca895dee9c75457f140b2b9c3bd.css?body=1" for ::1 at 2015-08-13 16:43:55 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 16:43:55 -0400
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-13 16:44:06 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5awox5uOFwYYOuVKiCaRXwHOUw08qnaL8gm/UrDBRQb51rIxnF7DFz0b06q4k/wTV+EQwQWEUg49LwTrDK52fg==", "user"=>{"email"=>"iamjustinprice@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "iamjustinprice@gmail.com"]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2015-08-13 20:44:06.920861"], ["sign_in_count", 2], ["updated_at", "2015-08-13 20:44:06.923677"], ["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 94ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 16:44:06 -0400
+Processing by RentalsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from index at /Users/Justin/wdi/projects/WDIUX/app/controllers/rentals_controller.rb:5)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 36.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-13 16:44:10 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered rentals/_form.html.erb (12.9ms)
+  Rendered rentals/new.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (undefined method `daterental' for #<Rental:0x007f89e24c2a70>):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month, :day, :year] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__1493446066568803016_70115088487240'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__1493446066568803016_70115088487240'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1283049020971096918_70115088223280'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.0ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.8ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.3ms)
+
+
+Started GET "/users/1/rentals/new" for ::1 at 2015-08-13 16:44:10 -0400
+Processing by RentalsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered rentals/_form.html.erb (3.9ms)
+  Rendered rentals/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `daterental' for #<Rental:0x007f89e243f260>):
+    17:               <%= f.select(:item, options_for_select([["UBoom", "UBoom"],["IPad", "IPad"],["IPhone 4 Charger", "IPhone 4 Charger"],["IPhone 5/6 Charger", "IPhone 5/6 Charger"],["MacBook Air", "MacBook Air"],["MacBook Charger", "MacBook Charger"],["USB Cord", "USB Cord"]])) %>
+    18: 
+    19:               <%= f.label :daterental, "Date for Rental" %>
+    20:                 <%= f.date_select :daterental, :order => [:month, :day, :year] %>
+    21: 
+    22:       <%= f.submit %>
+    23:     <% end %>
+  app/views/rentals/_form.html.erb:20:in `block in _app_views_rentals__form_html_erb__1493446066568803016_70115104119940'
+  app/views/rentals/_form.html.erb:2:in `_app_views_rentals__form_html_erb__1493446066568803016_70115104119940'
+  app/views/rentals/new.html.erb:2:in `_app_views_rentals_new_html_erb___1283049020971096918_70115091672060'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.8ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (80.8ms)
+
+
+Started GET "/items" for ::1 at 2015-08-13 16:44:13 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/items/3" for ::1 at 2015-08-13 16:45:26 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered items/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/2" for ::1 at 2015-08-13 16:45:33 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 16:45:45 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for ::1 at 2015-08-13 16:54:15 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c3d11cd1914ba0b634316c9ec3070c2f59c6eca895dee9c75457f140b2b9c3bd.css?body=1" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-13 16:54:15 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 16:54:21 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 16:58:02 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-756f9043270c6a89a4b28f331661af13ea39337639a205930caac177489ecd8e.css?body=1" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 16:58:02 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 16:58:03 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/assets/application.self-756f9043270c6a89a4b28f331661af13ea39337639a205930caac177489ecd8e.css?body=1" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 16:58:03 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 16:58:04 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-756f9043270c6a89a4b28f331661af13ea39337639a205930caac177489ecd8e.css?body=1" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 16:58:04 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:00:54 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-96eb8486c5877db6ab9a1855c33f1a252d0c1e427592ba88d4ac6446d8303f97.css?body=1" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:00:54 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:01:14 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b925022264b45758236c51592348fd54dcd438569c201f5b5b9dd9e7763ba552.css?body=1" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:01:15 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:04:06 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6b307987fe003d7b23174c29fc4af0dc83ac2152879d690be6d74b43b80b8de.css?body=1" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:04:06 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:04:52 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a4435bf153486120c66785efdcc00a62111e4d7c5ab2ba325961170e3abe7ea3.css?body=1" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:04:52 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:05:02 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a63e56e3dced324d9c36946ed45999c3472a45fe496ad7bd1e6974889a21c108.css?body=1" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:05:02 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:05:20 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-7885cfa66ec381ffdf0ec73d2e474eca75c8aca82a48d641c8a21d21113482ea.css?body=1" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:05:20 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:05:46 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-78569b4406e4a39cd58e2fffc4effb14387a5f2645d639c789f942f359c9c015.css?body=1" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:05:46 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:06:00 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-bbb9613ebb310f203b1b8a2191e180b259aeb51bf675b884b01acce0c3f841a1.css?body=1" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:06:00 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:07:29 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-ad7e88d76ca329c019fcb3bce600581bcdf1de4583a55144c765219ca59fd07b.css?body=1" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:07:29 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:08:19 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-3a5f5c321d3855b407c4ef228c7f57dbed4b4d31d789762f8290cb9496a8db27.css?body=1" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:08:19 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:08:31 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/application.self-1f9f7867befa86ff9ebeaf9260dfbc157758e19b8ce6eae1ed205348a9d84fda.css?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:08:32 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1f9f7867befa86ff9ebeaf9260dfbc157758e19b8ce6eae1ed205348a9d84fda.css?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:08:32 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:08:33 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1f9f7867befa86ff9ebeaf9260dfbc157758e19b8ce6eae1ed205348a9d84fda.css?body=1" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:08:33 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:08:42 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-658b922f7205d2a32b9f394ff9d8141b7aa93d47c5492bc2e4af7f5aeb9628e9.css?body=1" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:08:42 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:09:29 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-7ab862d6fb876d33e60a31e1c1f8cfbea56ae9b53cf66c5c5e18562135ef0956.css?body=1" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:09:29 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:09:48 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-b47c5af08a7e50cb38a69599f814cc775c334eabe8987d667ca923dbacb286e6.css?body=1" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:09:48 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:09:56 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-d289bc6b9d1f164dd63e56d98e03e21a4c3052f0ac9ee1842cf9a98290dab6f0.css?body=1" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:09:56 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:10:58 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-d289bc6b9d1f164dd63e56d98e03e21a4c3052f0ac9ee1842cf9a98290dab6f0.css?body=1" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:10:58 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:11:16 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-495189b358d094f4329a38f8ba2f21ed5a562215f7507156dc7f83316a45dda6.css?body=1" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:11:16 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:11:32 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-884c28241f575957c312bdaea7200d864c85b1f85d9aab8c3d632d0e57ae34f9.css?body=1" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:11:32 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:12:01 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9938e6bbb9443563f96fb2b9fea531afd8617e30891415b6d0af24616f45f55.css?body=1" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:12:01 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:12:02 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9938e6bbb9443563f96fb2b9fea531afd8617e30891415b6d0af24616f45f55.css?body=1" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:12:02 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:12:25 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-884c28241f575957c312bdaea7200d864c85b1f85d9aab8c3d632d0e57ae34f9.css?body=1" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:12:25 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:13:13 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-884c28241f575957c312bdaea7200d864c85b1f85d9aab8c3d632d0e57ae34f9.css?body=1" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:13:14 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:13:37 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-884c28241f575957c312bdaea7200d864c85b1f85d9aab8c3d632d0e57ae34f9.css?body=1" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:13:37 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:14:06 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-927af937ecc725ed5ef649c5af5f5b7b6ceef1b398147dd006723108dc89768d.css?body=1" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:14:06 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:14:14 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-ee405c2f76b1b8746b741d0ff042db192f3aaad506b48f3caa7f535f1a9d0fb0.css?body=1" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:14:14 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:14:35 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e174d2f9f0bb5615cfbad18e21f05d561ba3a20af52333a0d36b004790fb6979.css?body=1" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:14:35 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:16:12 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-daf29447c47b99b6bbc79e8f9acc04dc1436f4ef6e837d603dc9754a567cbb7d.css?body=1" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:16:12 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:16:31 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-40c6d74faa29b6dde41c5964ed5fff22913fb887b4360c748bc4087e40ecda53.css?body=1" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:16:31 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:17:01 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/assets/application.self-3b0a9abff0361ef272f0fcdc9e5f9cbef8ea1c0b2d8baee367654aa67594baaa.css?body=1" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:17:01 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:17:01 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-3b0a9abff0361ef272f0fcdc9e5f9cbef8ea1c0b2d8baee367654aa67594baaa.css?body=1" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:17:02 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:17:11 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-36a07b428d85729052198089fe15057a45a077ac554720952121e97cc491a6d3.css?body=1" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:17:11 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:17:24 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f74063eea44b8f09bde36443e30610e19058f830b9fedaa078a55c975905f6ca.css?body=1" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:17:24 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:18:19 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e74f7fd94518e2f521968974c6e8557ca9702c6e3dd0d230fe75c0582f436202.css?body=1" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:18:19 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:18:47 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-7a070ddcd83f4491a4e84adf36cd9b831c3ffaec7157633618cec57ebf6901cc.css?body=1" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:18:47 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:19:13 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-a766bd99d3b4e0764bce66df5ceed507b1dd7c13099c226f31c6b90b23ac519a.css?body=1" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:19:13 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:19:14 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a766bd99d3b4e0764bce66df5ceed507b1dd7c13099c226f31c6b90b23ac519a.css?body=1" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:19:14 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:19:19 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-bcfd8949b07426997c3186748bd3c6826a0eccd363b8964e096d8fefcda2d9dd.css?body=1" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:19:19 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:50:21 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a10e59b4779a81b7bb223b266eb602273fb6c39e3288723339c2253784beea81.css?body=1" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:50:21 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:50:55 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-65410fcfe44d2f33d8696acb5c9a4d00a149d5873db364ea633432c032f9de2b.css?body=1" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:50:55 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:51:15 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/assets/application.self-faebc9ad8359f8967b91a8fa6d5023c0d767740ae0485720bc44a32bfdfc29c9.css?body=1" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:51:15 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:51:48 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-faebc9ad8359f8967b91a8fa6d5023c0d767740ae0485720bc44a32bfdfc29c9.css?body=1" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:51:48 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:52:16 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-faebc9ad8359f8967b91a8fa6d5023c0d767740ae0485720bc44a32bfdfc29c9.css?body=1" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:52:16 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:52:17 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-faebc9ad8359f8967b91a8fa6d5023c0d767740ae0485720bc44a32bfdfc29c9.css?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:52:17 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-faebc9ad8359f8967b91a8fa6d5023c0d767740ae0485720bc44a32bfdfc29c9.css?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:52:17 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:53:50 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-5c210ed776333d0e006ca6c646dad989c45cca182b9edf135be2888335e55064.css?body=1" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:53:50 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:54:06 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a7261470e958df6e3c35df6438510d165d2c9342ef82119d70f09ade53450c.css?body=1" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:54:06 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:54:07 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/application.self-f6a7261470e958df6e3c35df6438510d165d2c9342ef82119d70f09ade53450c.css?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:54:07 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a7261470e958df6e3c35df6438510d165d2c9342ef82119d70f09ade53450c.css?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:54:07 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:55:51 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (4.9ms)
+  Rendered items/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a7261470e958df6e3c35df6438510d165d2c9342ef82119d70f09ade53450c.css?body=1" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:55:51 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:55:52 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (2.5ms)
+  Rendered items/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a7261470e958df6e3c35df6438510d165d2c9342ef82119d70f09ade53450c.css?body=1" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:55:52 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:57:13 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (1.6ms)
+  Rendered items/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c35acc60c2b0ed966f5f045a2ac13689a6aec3090859f2f8bf7661122c9ddba7.css?body=1" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:57:13 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:57:14 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (1.6ms)
+  Rendered items/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c35acc60c2b0ed966f5f045a2ac13689a6aec3090859f2f8bf7661122c9ddba7.css?body=1" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:57:14 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 17:58:35 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/_form.html.erb (1.7ms)
+  Rendered items/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-c35acc60c2b0ed966f5f045a2ac13689a6aec3090859f2f8bf7661122c9ddba7.css?body=1" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 17:58:35 -0400
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:03:53 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/Justin/wdi/projects/WDIUX/app/views/items/show.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/Justin/wdi/projects/WDIUX/app/views/items/show.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/items/show.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/items/show.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.1ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:05:14 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    19: 
+    20:   <div class="reserve-item">
+    21:     <h1 class="info-large-text">RESERVE NOW</h1>
+    22:     <%= form_for @rental do |f| %>
+    23:       <p>
+    24:         <%= f.label :name, "First Name and Last Name" %>
+    25:         <%= f.text_field :name %>
+  app/views/items/show.html.erb:22:in `_app_views_items_show_html_erb__2956846258461705896_70115084312820'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.1ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (80.1ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:05:57 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    19: 
+    20:   <div class="reserve-item">
+    21:     <h1 class="info-large-text">RESERVE NOW</h1>
+    22:     <%= form_for [@user, @rental] do |f| %>
+    23:       <p>
+    24:         <%= f.label :name, "First Name and Last Name" %>
+    25:         <%= f.text_field :name %>
+  app/views/items/show.html.erb:22:in `_app_views_items_show_html_erb__2956846258461705896_70115165375500'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (35.1ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (74.7ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:06:47 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20:   <div class="reserve-item">
+    21:     <h1 class="info-large-text">RESERVE NOW</h1>
+    22:     <ul>
+    23:       <%= form_for [@user, @rental] do |f| %>
+    24: 
+    25:           <%= f.label :name, "Your Name" %>
+    26:             <%= f.text_field :name %>
+  app/views/items/show.html.erb:23:in `_app_views_items_show_html_erb__2956846258461705896_70115126128480'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.7ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (72.7ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:06:49 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20:   <div class="reserve-item">
+    21:     <h1 class="info-large-text">RESERVE NOW</h1>
+    22:     <ul>
+    23:       <%= form_for [@user, @rental] do |f| %>
+    24: 
+    25:           <%= f.label :name, "Your Name" %>
+    26:             <%= f.text_field :name %>
+  app/views/items/show.html.erb:23:in `_app_views_items_show_html_erb__2956846258461705896_70115126128480'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.5ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (35.8ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (74.3ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:08:24 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20:   <div class="reserve-item">
+    21:     <h1 class="info-large-text">RESERVE NOW</h1>
+    22:     <ul>
+    23:       <%= form_for [@user, @rental] do |f| %>
+    24: 
+    25:           <%= f.label :name, "First Name and Last Name" %>
+    26:             <%= f.text_field :name %>
+  app/views/items/show.html.erb:23:in `_app_views_items_show_html_erb__2956846258461705896_70115165159860'
+
+
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.4ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Justin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (83.1ms)
+
+
+Started GET "/items/1" for ::1 at 2015-08-13 18:11:08 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c35acc60c2b0ed966f5f045a2ac13689a6aec3090859f2f8bf7661122c9ddba7.css?body=1" for ::1 at 2015-08-13 18:11:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 18:11:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 18:11:08 -0400
+
+
+Started GET "/assets/application.self-0fc8a0df5575d05b2c41d0bd6721bc26b8069cb3e8120b25d45ae2b8b20cc1cb.js?body=1" for ::1 at 2015-08-13 18:11:08 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-13 18:11:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-13 18:11:08 -0400
