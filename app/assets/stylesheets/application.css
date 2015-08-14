@@ -157,6 +157,7 @@ h1.home-large-text-equipment{
  	float: left;
  	display: block;
  	font-family: "News706BT-RomanC", Georgia;
+  font-size: .9em;
 }
 
 .header ul li:first-child {
@@ -208,17 +209,15 @@ ul.nav {
 }
 
 .mobileNavWrapper ul.nav li a {
+  font-family: "News706BT-RomanC", Georgia;
  	border-bottom: 1px solid #4B4B4B;
  	width: 100%;
  	float: left;
  	display: block;
  	color: #fff;
- 	font-weight: normal;
- 	font-style: normal;
- 	font-size: 15px;
- 	text-transform: uppercase;
+ 	font-weight: 100;
+ 	font-size: 1em;
  	text-decoration: none;
- 	letter-spacing: 2px;
  	padding: 20px;
  	background: #212121;
 }
@@ -307,11 +306,15 @@ p.remember {
   background: #818181;
 }
 
-select#item_id, .new_rental select, .edit_rental select {
+.delete {
+  background: #000;
+}
+
+select#item_id, .new_rental select, .edit_rental select, .new_item select, .edit_item select {
     height: 2.4em;
 }
 
-.new_rental input.submit, .edit_rental input.submit {
+.new_rental input.submit, .edit_rental input.submit, .new_item input.submit, .edit_item input.submit {
   display: block;
   margin: 20px auto;
 }
@@ -327,11 +330,11 @@ input#user_remember_me {
 }
 
 
-input.submit {
+input.submit, input.delete {
   width: 29.5% !important;
 }
 
-.submit, .signup, .reset, .view-requests {
+.submit, .signup, .reset, .view-requests, .delete {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -364,7 +367,7 @@ input.submit {
   width: 80%;
 }
 
-.new_rental label, .edit_rental label {
+.new_rental label, .edit_rental label, .new_item label, .edit_item label {
   display: block;
   margin: 1em 0em .5em 0em;
 }
@@ -654,6 +657,46 @@ p {
 
 .content h2 {
   font-size: 1.25em;
+}
+
+.complex-grid {
+  left: 50%;
+  width: 80%;
+}
+
+.complex-grid h2 {
+  font-size: 3.5em;
+}
+
+h1.home-large-text, h1.home-large-text-equipment {
+  font-size: 6em;
+  line-height: .8;
+}
+
+.note {
+  display: none;
+}
+
+.item_info {
+  margin: 0 auto;
+}
+
+footer {
+  padding: 30px 0px;
+}
+
+.footer-left, .footer-right {
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+  padding: 10px 30px;
+}
+
+/* Request Page */
+
+.request-titles, .item, .name, .identification, .email, .phone, .quantity-all {
+  width: 100%;
+  margin: 0 auto;
 }
 
 }
