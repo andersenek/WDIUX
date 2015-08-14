@@ -15,25 +15,25 @@
  */
 
  @font-face {
-   font-family: "PFDin";
-   src: url("http://ericaandersen.net/fonts/PFDin.ttf") format("ttf");
-   font-style: normal;
-   font-weight: normal;
- }
+  font-family: "PFDin";
+  src: font-url("PFDin.ttf");
+  font-style: normal;
+  font-weight: normal;
+  }
 
  @font-face {
-   font-family: 'News706';
-   src: url("http://ericaandersen.net/fonts/News706.ttf") format("ttf");
-   font-style: normal;
-   font-weight: normal;
- }
+  font-family: "News706";
+  src: font-url("News706.ttf");
+  font-style: normal;
+  font-weight: normal;
+  }
 
  @font-face {
   font-family: "Avenir";
-  src: url("http://ericaandersen.net/fonts/Avenir.ttc") format("ttc");
+  src: font-url("Avenir.ttc");
   font-style: normal;
   font-weight: normal;
- }
+  }
 
 body {
   background: whitesmoke;
@@ -51,7 +51,7 @@ li {
 /* Main Styles */
 
 h1.home-large-text, h1.home-medium-text, h1.home-large-text-equipment {
-  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  font-family: "PFDin", sans-serif;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -88,7 +88,7 @@ h1.home-large-text-equipment{
 }
 
 .see-more select#item_id, .see-more .view-requests{
-  font-family: "News706BT-RomanC", Georgia;
+  font-family: "News706", Georgia;
 }
 
 .form-page, .request-page {
@@ -160,7 +160,7 @@ h1.home-large-text-equipment{
 .header ul li {
  	float: left;
  	display: block;
- 	font-family: "News706BT-RomanC", Georgia;
+ 	font-family: "News706", Georgia;
   font-size: .9em;
 }
 
@@ -213,7 +213,7 @@ ul.nav {
 }
 
 .mobileNavWrapper ul.nav li a {
-  font-family: "News706BT-RomanC", Georgia;
+  font-family: "News706C", Georgia;
  	border-bottom: 1px solid #4B4B4B;
  	width: 100%;
  	float: left;
@@ -273,7 +273,7 @@ ul.nav {
 /* Forms */
 
 .forms {
-  font-family: "News706BT-RomanC", Georgia;
+  font-family: "News706", Georgia;
   width: 70%;
   margin: 0 auto;
   margin-top: 30px;
@@ -285,13 +285,13 @@ ul.nav {
 }
 
 .forms h2 {
-  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  font-family: "PFDin", sans-serif;
   text-transform: uppercase;
   font-size: 3em;
 }
 
 .forms h3 {
-  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  font-family: "PFDin", sans-serif;
   text-transform: uppercase;
   font-size: 2em;
   margin: .5em auto;
@@ -322,7 +322,7 @@ p.remember {
 }
 
 a.signup, a.view-requests {
-  font-family: "News706BT-RomanC", Georgia;
+  font-family: "News706", Georgia;
 }
 
 select#item_id, .new_rental select, .edit_rental select, .new_item select, .edit_item select {
@@ -406,7 +406,7 @@ input.submit, input.delete {
 }
 
 .complex-grid h2 {
-  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  font-family: "PFDin", sans-serif;
   color: #000;
   margin: 0 auto;
   text-transform: uppercase;
@@ -415,7 +415,7 @@ input.submit, input.delete {
 }
 
 p.resizable.medium {
-  font-family: "News706BT-RomanC", Georgia;
+  font-family: "News706", Georgia;
   font-size: 1.2em;
 }
 

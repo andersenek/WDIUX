@@ -5,6 +5,7 @@
 <div class="item-show-page">
 
   <div class="reserve-item">
+
     <h1 class="info-large-text">RESERVE NOW</h1>
     <%= form_for [@user, @rental] do |f| %>
 
@@ -32,20 +33,21 @@
 
           <%= f.submit class: 'submit' %>
         <% end %>
-
-
-  </div>
+  </div>  <!-- End Reserve -->
 
   <div class="item-info">
     <%= image_tag @item.photo_url, class: "item_image" %>
     <h3><%= @item.name %></h3>
     <div class="quantity_condition">
-      <p><% if can? :update, @item %>
+      <p>
+        <% if can? :update, @item %>
         <%= link_to "(Edit this Item)", edit_item_path(@item) %>
-    </div>
-      <% end %>
-    </p>
+        <% end %>
+      </p>
+    </div> <!-- End Quanity Condition -->
+    
     <h4>Quantity Available: <%= @item.quantity %></h4>
     <p class="description">IPhone deep v direct trade, polaroid vinyl beard single-origin coffee shabby chic American Apparel Schlitz fap brunch drinking vinegar banjo wayfarers.</p>
   </div>
+
 </div>
