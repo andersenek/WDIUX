@@ -87,6 +87,10 @@ h1.home-large-text-equipment{
   transform: translate(-50%, -50%);
 }
 
+.see-more select#item_id, .see-more .view-requests{
+  font-family: "News706BT-RomanC", Georgia;
+}
+
 .form-page, .request-page {
   height: 400px;
   background-repeat: no-repeat;
@@ -286,6 +290,13 @@ ul.nav {
   font-size: 3em;
 }
 
+.forms h3 {
+  font-family: "PFDinTextCompPro-Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: .5em auto;
+}
+
 .field-remember {
   position: relative;
 }
@@ -310,8 +321,12 @@ p.remember {
   background: #000;
 }
 
+a.signup, a.view-requests {
+  font-family: "News706BT-RomanC", Georgia;
+}
+
 select#item_id, .new_rental select, .edit_rental select, .new_item select, .edit_item select {
-    height: 2.4em;
+  height: 2.4em;
 }
 
 .new_rental input.submit, .edit_rental input.submit, .new_item input.submit, .edit_item input.submit {
@@ -460,6 +475,7 @@ p.resizable.medium {
 
 .check_box {
   margin-right: 0.5em;
+  -webkit-box-shadow: none;
 }
 
 p.description {
@@ -529,6 +545,25 @@ p a {
   color: black;
 }
 
+/* Admin Request Views */
+
+.admin .request-titles {
+    font-size: .7em;
+}
+
+.admin .request-item, .admin .request-id, .admin .request-phone, .admin .request-name, .admin .request-email, .admin .request-quantity {
+  border-bottom: 5px solid #fff;
+  padding: 10px 30px;
+}
+
+.admin .request-item {
+  background: #DADADA;
+}
+
+.admin .request-id, .admin .request-phone, .admin .request-name, .admin .request-email, .admin .request-quantity {
+  background: #E9E9E9;
+}
+
 /* Footer */
 
 footer {
@@ -575,6 +610,10 @@ footer p {
 
 
 @media screen and (max-width: 1550px) { /*LARGER SCREEN ADJUSTMENTS*/
+.all-requests {
+  width: 75%;
+  font-size: .9em;
+}
 
 }
 
@@ -601,6 +640,10 @@ footer p {
   padding: 10px 35px;
 }
 
+.admin .request-item, .admin .request-id, .admin .request-phone, .admin .request-name, .admin .request-email, .admin .request-quantity {
+  padding: 10px 20px;
+}
+
 }
 
 @media screen and (max-width: 1210px) { /*TYPICAL LANDSCAPE TABLET ADJUSTMENTS*/
@@ -619,7 +662,18 @@ footer p {
 .request-item, .request-id, .request-phone, .request-name, .request-email, .request-quantity {
   padding: 10px 30px;
 }
+
+.admin .request-titles {
+    font-size: 1em;
 }
+
+.admin .request-item, .admin .request-id, .admin .request-phone, .admin .request-name, .admin .request-email, .admin .request-quantity {
+  padding: 10px 3.5em;
+}
+
+}
+
+
 
 @media screen and (max-width: 900px) { /*SMALLER TABLET/PORTRAIT TABLET ADJUSTMENTS*/
 .header ul {
@@ -641,6 +695,20 @@ p {
 
 .content h2 {
   font-size: 1.5em;
+}
+
+/* Normal Request Page */
+
+.request-titles, .item, .name, .identification, .email, .phone, .quantity-all {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Admin  Request Page */
+
+.admin .request-titles, .admin .item, .admin .name, .admin .identification, .admin .email, .admin .phone, .admin .quantity-all {
+  width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -690,13 +758,6 @@ footer {
   text-align: center;
   float: none;
   padding: 10px 30px;
-}
-
-/* Request Page */
-
-.request-titles, .item, .name, .identification, .email, .phone, .quantity-all {
-  width: 100%;
-  margin: 0 auto;
 }
 
 }
