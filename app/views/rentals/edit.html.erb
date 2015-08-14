@@ -1,7 +1,13 @@
-<h1>Edit Rental Info</h1>
+<div class="form-page">
+  <h1 class="home-large-text">Edit Rental<br>Request</h1>
+</div>
+
+<div class="forms">
+
 <%= render partial: "form" %>
   <% if can? :destroy, @rental %>
-<%= form_for [@user, @rental], method: :delete do |f| %>
+  <%= form_for [@user, @rental], method: :delete do |f| %>
   <%= f.submit "Fulfilled!", data: { confirm: 'Are you sure?' } %>
-    <% end %>
+  <% end %>
 <% end %>
+</div>
