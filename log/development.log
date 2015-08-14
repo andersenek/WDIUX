@@ -1,1 +1,61 @@
 Started GET "/" for ::1 at 2015-08-14 09:05:03 -0400
+
+
+Started GET "/" for ::1 at 2015-08-14 10:36:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (202.5ms)
+Completed 200 OK in 381ms (Views: 339.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/application.self-f22bb417834f00a9d22143c9a2748c9a50981e2aa0584b21ca669841c28f8cf3.css?body=1" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/application.self-36735a3ddef063a2c93d9a7a377549870afb73453e62d3b8dc3b44ac31254789.js?body=1" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_boombox-eb0af751b3f0a0528447e4b61fae60e0f14cbd2ae5001709d8547d40f03c9ce2.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_iphone4-9203eb76d5f6ca40ef5023823696dd9d6da5637c14f306f7ac173f2cbf4c89c8.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_iphone5-8fe3a58a914124d3273b96d9645d8b200bcbc5c6823c2a2452dcda63902bcb01.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_usbcord-69c07f545880d5720b3b51a9fa09bbdb0b0fe9aa4c53ab45b198df670735a863.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_laptop-ed309301258fa90b75a692e827c80ec2984238c033aab183cc2d773f4116080f.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_ipad-8318dca0abdc0b88ff23e5cdda06cd71bc71518c51d2b7297dd9f76221c2696e.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/assets/GA_laptopcharger-1d804b101d6234d0343139574319ceadfceab13f2ad9c353e115287cf65680ad.jpg" for ::1 at 2015-08-14 10:36:36 -0400
+
+
+Started GET "/rentals/policy" for ::1 at 2015-08-14 10:36:38 -0400
+Processing by RentalsController#policy as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered rentals/policy.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-14 10:36:49 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.7ms)
