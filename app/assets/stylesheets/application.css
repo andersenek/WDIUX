@@ -665,7 +665,7 @@ a {
 .quantity_condition {
   width: 300px;
   margin-top: 1px;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 /* Media Queries */
 

@@ -50,10 +50,7 @@
         <%= link_to "#{item.name}", item, class: "item_link" %>
         <p class="quantity">Quantity Available: <%= item.quantity %></p>
         <p class="description">IPhone deep v direct trade, polaroid vinyl beard single-origin coffee shabby chic American Apparel Schlitz fap brunch drinking vinegar banjo wayfarers.</p>
-        <form action="">
-          <input class="check_box" type="checkbox" name="rent" value="Rent">
           <%= link_to "Rent Now", new_user_rental_path(current_user, @rental), class: "rent_link" %>
-        </form>
     </div>
   <% end %>
 </div>
