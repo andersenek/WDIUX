@@ -38,6 +38,17 @@
   </div>
 
   <div class="request-titles">
+    <h4>Date of Rental:</h4>
+    <div class="name">
+      <% @rental.each do |rental| %>
+      <div class="request-name">
+        <p><%= rental.daterental.strftime("%d %b %y") %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="request-titles">
     <h4>Email:</h4>
     <div class="email">
     <% @rental.each do |rental| %>
