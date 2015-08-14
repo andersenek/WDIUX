@@ -6,20 +6,23 @@
 
   <br>
   <br>
-  <%= image_tag @item.photo_url, class: "item_image" %>
+
+  <div class="reserve-item">
+    <h1 class="info-large-text">RESERVE NOW</h1>
+
+  </div>
+
   <div class="item-info">
+    <%= image_tag @item.photo_url, class: "item_image" %>
     <h3><%= @item.name %></h3>
-    <p><% if can? :update, @item %>
-      <%= link_to "(Edit this Item)", edit_item_path(@item) %>
+    <div class="quantity_condition">
+      <p><% if can? :update, @item %>
+        <%= link_to "(Edit this Item)", edit_item_path(@item) %>
+    </div>
       <% end %>
     </p>
     <h4>Quantity Available: <%= @item.quantity %></h4>
     <p>Item Condition: <%= @item.condition %></p>
-  </div>
-
-  <div class="reserve-item">
-    <h1 class="info-large-text">RESERVE NOW</h1>
-    
   </div>
 
 </div>
