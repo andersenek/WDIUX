@@ -16,14 +16,14 @@
 
  @font-face {
    font-family: "PFDin";
-   src: url("http://ericaandersen.net/PFDin.ttf") format("ttf");
+   src: url("http://ericaandersen.net/fonts/PFDin.ttf") format("ttf");
    font-style: normal;
    font-weight: normal;
  }
 
  @font-face {
    font-family: 'News706';
-   src: url("http://ericaandersen.net/News706.ttf") format("ttf");
+   src: url("http://ericaandersen.net/fonts/News706.ttf") format("ttf");
    font-style: normal;
    font-weight: normal;
  }
