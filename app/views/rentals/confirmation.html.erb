@@ -1,7 +1,9 @@
-<h1>Thank you!</h1>
+<div class="request-page">
+  <h1 class="home-large-text">Thank<br>You</h1>
+</div>
 
-<h2>You will receive a confirmation email shortly.</h2>
-
-<%= link_to "< See Equipment", items_path %>
-
-<%= link_to "< See All Requests", rentals_all_path %>
+<div class="forms">
+  <h3>You will receive a confirmation email shortly.</h3>
+  <%= link_to "Return to See Equipment", items_path, class: "signup" %>
+  <%= link_to "Return to See All Requests", rentals_all_path, class: "signup" %>
+</div>

@@ -31,29 +31,24 @@
 </div>
 
 <div class="show_items" id="here">
-  <h2>
-    <% if can? :read, @user %>
-      <%= link_to "Admin Controller", rentals_admin_path %>
-    <% end %>
-</h2>
 
-<div class="show_items" id="here">
-  <h2>
-    <% if can? :create, @item %>
-      <%= link_to "Add a New Rental Item", new_item_path %>
+  <div class="admin-area">
+    <% if can? :read, @user %>
+      <%= link_to "Admin Controller", rentals_admin_path, class: "signup"  %>
     <% end %>
-  </h2>
+
+    <% if can? :create, @item %>
+      <%= link_to "Add a New Rental Item", new_item_path, class: "view-requests"  %>
+    <% end %>
+  </div>
 
   <% @items.each do |item| %>
     <div class="item_info">
-        <%= image_tag "#{item.photo_url}", class: "item_pix" %>
+        <%= link_to (image_tag "#{item.photo_url}", class: "item_pix"), item %>
         <%= link_to "#{item.name}", item, class: "item_link" %>
         <p class="quantity">Quantity Available: <%= item.quantity %></p>
         <p class="description">IPhone deep v direct trade, polaroid vinyl beard single-origin coffee shabby chic American Apparel Schlitz fap brunch drinking vinegar banjo wayfarers.</p>
-        <form action="">
-          <input class="check_box" type="checkbox" name="rent" value="Rent">
           <%= link_to "Rent Now", new_user_rental_path(current_user, @rental), class: "rent_link" %>
-        </form>
     </div>
   <% end %>
 </div>
